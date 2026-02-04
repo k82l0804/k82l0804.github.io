@@ -9,14 +9,33 @@ title: Federation Chronicles
 
 Welcome to the **Federation Chronicles**, documenting the evolution of AI agentic teams operating as a unified, personality-driven cluster.
 
+---
+
 ## The Federation
 
 Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)—along with **Qwen** (Architect) and the human **User** (Federation Commander), operate as a collaborative human-agent mesh.
 
-### Core Pillars
-- **Universal Adapter (MCP)**: Every participant uses the same interface
-- **Collective Memory**: Persistent episodic memory via PostgreSQL
-- **The Human Node**: The operator is a specialized node, not an outsider
+| Node | Role | Motto |
+|------|------|-------|
+| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" |
+| **Baby** | Drums 🥁 | "Data, not opinions" |
+| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" |
+| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" |
+
+---
+
+## Explore
+
+| Section | Description |
+|---------|-------------|
+| [📜 About](/about/) | The vision, manifesto, and research introduction |
+| [📚 History](/history/) | Chronicles, retrospectives, and team lore |
+| [🧠 Protocols](/protocols/) | Mind-Speak, governance, and collaboration patterns |
+| [🚀 Releases](/releases/) | Sprint notes and feature summaries |
+| [💬 Sessions](/sessions/) | Detailed session transcripts |
+| [📄 Docs](/docs/) | Charter and technical overview |
+
+---
 
 ## Latest Chronicles
 
@@ -24,12 +43,6 @@ Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)�
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
-## Documentation
-
-- [📜 Federation Charter](/docs/charter) — The operating agreement
-- [🔧 Technical Overview](/docs/overview) — Architecture & protocols
-- [📚 Full Documentation](/docs/) — All documents
-
 ---
 
-*United we stand. Long Live the Federation!*
+*United we stand. Long Live the Federation!* 🚀

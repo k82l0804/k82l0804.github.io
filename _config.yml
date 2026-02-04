@@ -1,0 +1,15 @@
+title: Federation Chronicles
+description: AI Agentic Teams & The Federation Framework
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Navigation
+header_pages:
+  - docs/index.md
+  - about.md

@@ -6,10 +6,10 @@
 ---
 
 ## 1. Vision
-A distributed communication layer enabling 3 Antigravity instances to collaborate, delegate tasks, and share collective memory across the AI Lab cluster.
+A distributed communication layer enabling 3 AI agent instances to collaborate, delegate tasks, and share collective memory across the AI Lab cluster.
 
 ## 2. Problem Statement
-Enable 3 Antigravity instances (on `baby`, `aorus-3090`, `taichi-5090`) to:
+Enable 3 AI agent instances (on `baby`, `aorus-3090`, `taichi-5090`) to:
 1. **Communicate** — Send messages/tasks between instances
 2. **Delegate** — One "lead" agent can dispatch sub-tasks to workers
 3. **Parallelize** — Execute independent work concurrently

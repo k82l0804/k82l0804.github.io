@@ -544,7 +544,7 @@ During testing, discovered that the `--url` argument was parsed but never applie
 ### Key Findings
 
 1. **WiFi vs Wired**: ~2.5% slower on WiFi (389/s vs 399/s) - negligible difference
-2. **IDE Overhead**: Running service inside Antigravity IDE showed no measurable overhead (~1% variance is within normal fluctuation)
+2. **IDE Overhead**: Running service inside agentic IDE showed no measurable overhead (~1% variance is within normal fluctuation)
 3. **HTTP Polling Architecture**: The benchmark uses server-side indexing via HTTP API - files are read from server's local disk, not streamed from client
 
 ### I/O Pattern Observation

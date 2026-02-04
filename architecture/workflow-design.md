@@ -347,7 +347,7 @@ try {
 
 ---
 
-## Skill Architecture (Antigravity)
+## Skill Architecture
 
 Instead of giving the Team Leader 20 tools, group them into **Skills** that help the agent find the right tool for the current Phase.
 

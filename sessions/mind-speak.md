@@ -16,10 +16,10 @@
 |--------|-------|--------|
 | 3 messaging tools | `federation_send` | Unified |
 | Separate polls | `federation_consensus_*` | Cleaner API |
-| Session vs Conversation | Unified: Conversation IS Session | Antigravity pattern |
+| Session vs Conversation | Unified: Conversation IS Session | agentic IDE pattern |
 | ki_search | `federation_search(scope, query)` | Extensible |
 
-### 2. Storage Model (Matches Antigravity)
+### 2. Storage Model (Unified Storage Pattern)
 
 ```
 federation/
@@ -140,9 +140,9 @@ They're actively trying NOT to dominate. They understand the architecture AND th
 
 ```
 Local Nodes (persistent, hardware-bound):
-├── baby (Gemini/Antigravity) - Analyst
-├── aorus (Gemini/Antigravity) - Developer  
-├── taichi (Gemini/Antigravity) - Lead/Architect
+├── baby (Gemini) - Analyst
+├── aorus (Gemini) - Developer  
+├── taichi (Gemini) - Lead/Architect
 
 Cloud Nodes (stateless, high-reasoning):
 ├── grok (xAI via Cline + MCP) - Explorer/Contrarian

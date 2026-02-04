@@ -30,7 +30,7 @@ Technical documentation from the broader AI Lab project - the infrastructure tha
 │   (MCP Federation, Mind-Speak, Collective Memory)   │
 ├─────────────────────────────────────────────────────┤
 │                   Agent Layer                        │
-│   (Kinetic Workflows, Antigravity, Continue.dev)    │
+│   (Kinetic Workflows, Cline, Continue.dev)    │
 ├─────────────────────────────────────────────────────┤
 │                   Retrieval Layer                    │
 │   (FRAG, LanceDB, Embedding Models)                 │

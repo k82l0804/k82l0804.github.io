@@ -14,7 +14,8 @@ Technical documentation from the broader AI Lab project - the infrastructure tha
 
 | Section | Description |
 |---------|-------------|
-| [🔍 FRAG (Fast RAG)](frag/) | High-performance RAG indexing and search |
+| [�️ Cluster Hardware](cluster/) | Node specs, GPU configs, model compatibility |
+| [�🔍 FRAG (Fast RAG)](frag/) | High-performance RAG indexing and search |
 | [🧠 RAG Concepts](rag/) | Understanding RAG, MCP, and embeddings |
 | [🔐 AI Security](security/) | Enterprise security architectures for AI systems |
 | [⚡ Kinetic](kinetic/) | Agentic workflow system for VS Code |

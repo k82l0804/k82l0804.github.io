@@ -159,7 +159,7 @@ See: [Protocols](/protocols/)
 | **The story** | [Chronicle](/history/full-chronicle) |
 | **Security architectures** | [AI Security](/ai-lab/security/) |
 | **RAG implementation** | [FRAG](/ai-lab/frag/) |
-| **Agent workflows** | [Kinetic](/ai-lab/kinetic/) |
+| **Agent workflows** | [Kinetic](/ai-lab/kinetic/) (an early attempt at creating an agentic coding assistant) |
 | **Coordination protocols** | [Mind-Speak](/protocols/mind-speak) |
 
 ---

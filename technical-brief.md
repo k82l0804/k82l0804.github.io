@@ -72,7 +72,7 @@ The architecture was designed with secure/classified environments in mind:
 | **Access control** | Per-conversation, per-agent permissions |
 | **Model provenance** | Local weights only; no fine-tuning on sensitive data |
 
-See: [SCIF Architecture](/ai-lab/security/scif-architecture) | [CUI-Safe Design](/ai-lab/security/cui-safe-design)
+See AI research: [SCIF Architecture](/ai-lab/security/scif-architecture) | [CUI-Safe Design](/ai-lab/security/cui-safe-design)
 
 ---
 
@@ -89,7 +89,7 @@ See: [SCIF Architecture](/ai-lab/security/scif-architecture) | [CUI-Safe Design]
 
 ---
 
-## Performance
+## Fast RAG (FRAG) Performance
 
 Benchmarked on 2× RTX 3090 (48GB VRAM total):
 
@@ -101,12 +101,23 @@ Benchmarked on 2× RTX 3090 (48GB VRAM total):
 
 See: [Benchmarks](/ai-lab/benchmarks/)
 
+Note: Not yet integrated into the Federation Framework
+
+---
+
+## Pulse
+
+### Framework data that is Pulled or Pushed at some interval e.g. 2 secs
+Every agent gets a pulse that includes: 1) the shared "thoughts" of all other agents (aka mind speak); 2) inbox; 3) pending_approvals; 4) a private thought from the previous pulse.
+
+After a Pulse, the agent has instructions (from an injected system prompt), on how to properly process the pulse, how to take immediate actions, then update their state for the next pulse.
+
 ---
 
 ## Protocols
 
-### Mind-Speak
-Implicit coordination through shared state observation. Agents broadcast intentions via a **Common Operating Picture (COP)** rather than explicit messages.
+### Mind-Speak (Agent Telepathy)
+Implicit coordination through shared state observation. Agents share intentions via a **Common Operating Picture (COP)** rather than explicit messages.  Every agent gets a pulse that includes: 1) the shared "thoughts" of all other agents; 2) inbox; 3) pending_approvals; 4) a private thought.
 
 ### Consensus
 Voting mechanisms for collective decisions:
@@ -150,14 +161,6 @@ See: [Protocols](/protocols/)
 | **RAG implementation** | [FRAG](/ai-lab/frag/) |
 | **Agent workflows** | [Kinetic](/ai-lab/kinetic/) |
 | **Coordination protocols** | [Mind-Speak](/protocols/mind-speak) |
-
----
-
-## Contact
-
-This is a personal R&D project by klasko ([@k82l0804](https://twitter.com/k82l0804)).
-
-Questions, collaboration ideas, or just want to chat about distributed AI systems? Reach out on X.
 
 ---
 

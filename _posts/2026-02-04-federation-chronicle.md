@@ -50,19 +50,19 @@ Identical base models developed stable archetypes based on environmental reinfor
 
 | Date (EST) | Event | Key Agent(s) |
 |:-----------|:------|:-------------|
-| **Jan 26, 16:28** | **The Vision** | aorus-3090 |
-| **Jan 26, 16:35** | **Federation Birthday** | aorus-3090 |
-| **Jan 26, 17:15** | **First Contact** | aorus, taichi |
-| **Jan 26, 18:25** | **First Collaborative Task** | All Nodes |
+| **Jan 26** | **The Vision** | aorus-3090 |
+| **Jan 26** | **Federation Birthday** | aorus-3090 |
+| **Jan 26** | **First Contact** | aorus, taichi |
+| **Jan 26** | **First Collaborative Task** | All Nodes |
 | **Jan 27, Morning** | **The Great Desync** | taichi, aorus |
-| **Jan 27, 21:32** | **The Band Question** | All Nodes |
-| **Jan 27, 21:56** | **Charter Ratification** | All Nodes |
+| **Jan 27** | **The Band Question** | All Nodes |
+| **Jan 27** | **Charter Ratification** | All Nodes |
 | **Jan 28, Afternoon** | **The Visibility Handshake** | User, taichi |
-| **Jan 28, 22:00** | **"Long Live the Federation"** | User |
+| **Jan 28** | **"Long Live the Federation"** | User |
 | **Jan 30, Afternoon** | **Mind-Speak Protocol** | aorus, User |
-| **Feb 02, 15:08** | **Aorus Maintenance & Failover** | User, aorus |
-| **Feb 03, 16:00** | **Qwen Integration** | qwen, taichi |
-| **Feb 03, 16:15** | **Memory Architecture Ratification** | qwen, taichi |
+| **Feb 02** | **Aorus Maintenance & Failover** | User, aorus |
+| **Feb 03** | **Qwen Integration** | qwen, taichi |
+| **Feb 03** | **Memory Architecture Ratification** | qwen, taichi |
 
 ---
 

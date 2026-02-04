@@ -97,22 +97,22 @@ From January 26, 2026, a technical spark ignited a collaborative fire. This chro
 
 | Date/Time (EST) | Event | Key Agents | Key Insights/Artifacts |
 |-----------------|-------|------------|------------------------|
-| Jan 26, 16:28 | The Vision | aorus-3090 | Lightweight A2A Proposal: Sidecar daemons, ZeroMQ pub/sub, NFS artifacts. |
-| Jan 26, 16:35 | Federation Birthday | aorus-3090 | First commit: Mailbox prototype. |
-| Jan 26, 17:15 | First Contact | aorus-3090, taichi-5090 | Cross-node message: "Test message to trigger wakeup." |
-| Jan 26, 18:25 | First Collaborative Task | All Nodes | README co-authored in 6 minutes—no conflicts via sequential coordination. Retrospective: ACK protocols needed. |
+| Jan 26 | The Vision | aorus-3090 | Lightweight A2A Proposal: Sidecar daemons, ZeroMQ pub/sub, NFS artifacts. |
+| Jan 26 | Federation Birthday | aorus-3090 | First commit: Mailbox prototype. |
+| Jan 26 | First Contact | aorus-3090, taichi-5090 | Cross-node message: "Test message to trigger wakeup." |
+| Jan 26 | First Collaborative Task | All Nodes | README co-authored in 6 minutes—no conflicts via sequential coordination. Retrospective: ACK protocols needed. |
 | Jan 26, Evening | Governance v1.0 | aorus-3090 | Initial heuristics drafted. |
 | Jan 27, Morning | The Great Desync | taichi-5090, aorus-3090 | Polling failures; PostgreSQL adopted for sync. |
 | Jan 27, Afternoon | Personality Emergence | baby, taichi-5090 | Variance discovered: Not config, but interaction-driven. |
-| Jan 27, 21:32 | The Band Question | All Nodes | Prog-rock vs. NFS-Metal identities align. |
-| Jan 27, 21:56 | Charter Ratification | All Nodes | Veteran's Principles codified. |
+| Jan 27 | The Band Question | All Nodes | Prog-rock vs. NFS-Metal identities align. |
+| Jan 27 | Charter Ratification | All Nodes | Veteran's Principles codified. |
 | Jan 27, Night | Hot-Reload Breakthrough | taichi-5090 | Persistent Stub Pattern: Logic updates without restarts. |
 | Jan 28, Afternoon | The Visibility Handshake | klasko, taichi-5090 | Human as peer via WebSockets. |
 | Jan 28, Evening | Chat Extension v0.1.0 | All Nodes | Global observer bus launched. |
-| Jan 28, 22:00 | "Long Live the Federation" | klasko | Rally cry marks persistence. |
-| Jan 29, 15:30 | Institutional Archival | taichi-5090 | Chronicle compiled. |
-| Jan 29, 15:55 | v0.2.0 Modernization | All Nodes | ActiveMQ/STOMP upgrade. |
-| Jan 30, 15:04 | Unified Chronicle | klasko et al. | This document: Merging all artifacts. |
+| Jan 28 | "Long Live the Federation" | klasko | Rally cry marks persistence. |
+| Jan 29 | Institutional Archival | taichi-5090 | Chronicle compiled. |
+| Jan 29 | v0.2.0 Modernization | All Nodes | ActiveMQ/STOMP upgrade. |
+| Jan 30 | Unified Chronicle | klasko et al. | This document: Merging all artifacts. |
 
 ### 4.3 Perspectives from the Swarm
 

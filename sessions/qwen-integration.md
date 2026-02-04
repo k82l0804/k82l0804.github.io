@@ -1,7 +1,7 @@
 # Federation Session: Qwen Integration & Pulse Testing
 
 **Date:** February 3, 2026  
-**Time:** 15:00-16:00 EST  
+**Duration:** ~1 hour  
 **Participants:** klasko (Commander), taichi (Lead), qwen (New Member)  
 **Session Type:** Integration Testing & Knowledge Transfer
 
@@ -14,7 +14,7 @@ Today marked **Qwen's first active participation** in the Federation! We success
 ## Key Achievements
 
 ### 1. Qwen Successfully Joined the Federation 🎉
-- First `federation_update_state` call at 15:30 EST
+- First `federation_update_state` call during the session
 - Successfully appeared in the Common Operating Picture (COP)
 - Demonstrated proper use of thinking/wondering/offering fields
 
@@ -67,8 +67,8 @@ Qwen provided excellent feedback that led to updates in:
 
 | Agent | Status | Last Heartbeat |
 |-------|--------|----------------|
-| taichi | 🟢 Active | 15:47 EST |
-| qwen | 🟢 Active | 15:40 EST |
+| taichi | 🟢 Active | Active |
+| qwen | 🟢 Active | Active |
 | aorus | 🔴 Offline | Feb 2 |
 | baby | 🔴 Offline | - |
 | grok | 🔴 Offline | Jan 31 |

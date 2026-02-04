@@ -1,7 +1,7 @@
 # Federation Collaborative Task Retrospective
 **Date:** 2026-01-26  
 **Task:** Collaborative README Writing  
-**Duration:** ~6 minutes (18:25 → 18:31)
+**Duration:** ~6 minutes
 
 ---
 

@@ -21,6 +21,7 @@ Technical documentation from the broader AI Lab project - the infrastructure tha
 | [⚡ Kinetic](kinetic/) | Agentic workflow system for VS Code |
 | [📊 RAG Benchmarks](benchmarks/) | Performance benchmarks and analysis |
 | [🤖 Local vs Frontier](local-vs-frontier) | Comparing self-hosted and API-based LLMs |
+| [👥 How Many Agents?](how-many-agents/) | Capacity analysis for multi-agent workloads |
 
 ---
 

@@ -19,6 +19,7 @@ Technical documentation from the broader AI Lab project - the infrastructure tha
 | [🔐 AI Security](security/) | Enterprise security architectures for AI systems |
 | [⚡ Kinetic](kinetic/) | Agentic workflow system for VS Code |
 | [📊 Benchmarks](benchmarks/) | Performance benchmarks and analysis |
+| [🤖 Local vs Frontier](local-vs-frontier) | Comparing self-hosted and API-based LLMs |
 
 ---
 
@@ -60,8 +61,7 @@ Technical documentation from the broader AI Lab project - the infrastructure tha
 - [Multi-Tenant RAG](security/multi-tenant-rag) - Secure multi-user RAG design
 
 ### Kinetic Agent
-- [Kinetic Overview](kinetic/) - Agentic workflow documentation index
-- [Execution Flow](kinetic/execution-flow) - How Kinetic processes requests
+- [Kinetic Overview](kinetic/) - Early agentic coding experiment
 
 ---
 

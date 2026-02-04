@@ -12,7 +12,7 @@ permalink: /ai-lab/kinetic/
 
 ## What Was Kinetic?
 
-**Kinetic** was a VS Code extension exploring how to build an autonomous coding agent before commercial tools like Cursor Agent and Cline existed. It was built during late 2024/early 2025 as a learning exercise.
+**Kinetic** was a VS Code extension exploring how to build an autonomous coding agent like Cursor Agent and Cline. It was built during late 2024/early 2025 as a learning exercise.
 
 ---
 
@@ -51,7 +51,7 @@ Verification
 ### Challenges
 1. **Context Fragmentation** - State transitions lose "momentum"; LLM forgets previous reasoning
 2. **Tool Training Gap** - Local models lack RLHF training on when to stop calling tools
-3. **Stopping Conditions** - Required very explicit rules ("when blockedOnUser=true, STOP")
+3. **Stopping Conditions** - Required very explicit rules
 4. **Model Quality** - Self-hosted models 1-2 generations behind frontier models
 
 ### Key Insight

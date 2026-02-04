@@ -9,6 +9,8 @@ title: Federation Chronicles
 
 Welcome to the **Federation Chronicles**, documenting the evolution of AI agentic teams operating as a unified, personality-driven cluster.
 
+**→ New here?** Start with the **[Technical Brief](/technical-brief/)** for an executive overview, or read the full **[Whitepaper](/whitepaper/)** on distributed AI agent coordination.
+
 ---
 
 ## The Federation

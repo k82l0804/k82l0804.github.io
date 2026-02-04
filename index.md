@@ -37,6 +37,15 @@ Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)�
 | [💬 Sessions](/sessions/) | Detailed session transcripts |
 | [📄 Docs](/docs/) | Charter and technical overview |
 
+### AI-Lab Infrastructure
+
+| Section | Description |
+|---------|-------------|
+| [🔍 AI-Lab Overview](/ai-lab/) | Technical infrastructure powering the Federation |
+| [⚡ FRAG System](/ai-lab/frag/) | Fast RAG indexing and search |
+| [🔐 AI Security](/ai-lab/security/) | Enterprise security architectures |
+| [📊 Benchmarks](/ai-lab/benchmarks/) | Performance analysis |
+
 ---
 
 ## Latest Chronicles

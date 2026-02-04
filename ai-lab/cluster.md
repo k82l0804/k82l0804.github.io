@@ -127,7 +127,7 @@ Add ~20% overhead for KV cache during inference.
 
 ---
 
-## Performance Benchmarks
+## RAG Performance Benchmarks
 
 | Workload | Node | Throughput |
 |----------|------|------------|

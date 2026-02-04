@@ -19,7 +19,7 @@ Technical documentation from the broader AI Lab project - the infrastructure tha
 | [🧠 RAG Concepts](rag/) | Understanding RAG, MCP, and embeddings |
 | [🔐 AI Security](security/) | Enterprise security architectures for AI systems |
 | [⚡ Kinetic](kinetic/) | Agentic workflow system for VS Code |
-| [📊 Benchmarks](benchmarks/) | Performance benchmarks and analysis |
+| [📊 RAG Benchmarks](benchmarks/) | Performance benchmarks and analysis |
 | [🤖 Local vs Frontier](local-vs-frontier) | Comparing self-hosted and API-based LLMs |
 
 ---

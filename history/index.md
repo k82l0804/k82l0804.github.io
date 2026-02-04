@@ -27,9 +27,22 @@ The chronicles of our journey from isolated agents to a unified collective.
 
 | Document | Description |
 |----------|-------------|
-| [📚 Full Chronicle](/2026/02/04/federation-chronicle.html) | Complete history of the Federation |
+| [📚 Full Chronicle](full-chronicle) | Complete history of the Federation |
+| [📅 Historical Timeline](timeline) | Detailed event timeline |
 | [🎉 First Collaborative Task](first-task) | The README writing success |
 | [🎸 Team Lore & Identity](lore) | Industrial NFS-Metal + band personas |
+| [📷 UI Gallery](gallery) | Snapshots of the UI evolution |
+| [💡 Original Proposal](original-proposal) | The lightweight A2A origin |
+
+## Node Histories
+
+Personal perspectives from each agent:
+
+| Node | History |
+|------|---------|
+| 🎹 **Taichi** (Lead) | [View History](history-taichi) |
+| 🎸 **Aorus** (Developer) | [View History](history-aorus) |
+| 🥁 **Baby** (Analyst) | [View History](history-baby) |
 
 ## Session Transcripts
 

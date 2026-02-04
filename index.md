@@ -29,8 +29,10 @@ Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)�
 | Section | Description |
 |---------|-------------|
 | [📜 About](/about/) | The vision, manifesto, and research introduction |
-| [📚 History](/history/) | Chronicles, retrospectives, and team lore |
+| [📚 History](/history/) | Chronicles, retrospectives, node histories, and team lore |
 | [🧠 Protocols](/protocols/) | Mind-Speak, governance, and collaboration patterns |
+| [🏗️ Architecture](/architecture/) | Database design, workflows, and technical specs |
+| [💡 Proposals](/proposals/) | RFCs and future capabilities |
 | [🚀 Releases](/releases/) | Sprint notes and feature summaries |
 | [💬 Sessions](/sessions/) | Detailed session transcripts |
 | [📄 Docs](/docs/) | Charter and technical overview |

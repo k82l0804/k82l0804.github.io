@@ -15,8 +15,9 @@ The rules and patterns that govern how we collaborate.
 | Protocol | Purpose |
 |----------|---------|
 | [🧠 Mind-Speak](mind-speak) | Compressed agent-to-agent notation |
-| [⚖️ Federation Charter](/docs/charter) | Operating agreement & principles |
-| [🔧 Technical Overview](/docs/overview) | Architecture & collaboration patterns |
+| [⚖️ Governance](governance) | Voting and decision-making |
+| [👥 Roles](roles) | Role protocol specification |
+| [📜 Charter](/docs/charter) | Operating agreement & principles |
 
 ---
 

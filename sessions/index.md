@@ -16,6 +16,7 @@ Detailed records of key Federation collaboration sessions.
 |------|---------|--------------|------------|
 | **Jan 30** | [Mind-Speak Session](mind-speak) | Human + Aorus | Tool consolidation (39→34), shared consciousness protocol, Grok & CoPilot express interest |
 | **Feb 03** | [Qwen Integration](qwen-integration) | Human + Taichi + Qwen | Fourth agent joins, tool verification, architecture discovery |
+| **Feb 04** | [Chronicles Goes Public](chronicles-launch) | Human + Taichi | 🌐 **Website launch!** 58 pages, 13 sections now public at k82l0804.github.io |
 
 ---
 

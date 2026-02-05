@@ -38,6 +38,7 @@ Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)�
 | [🚀 Releases](/releases/) | Sprint notes and feature summaries |
 | [💬 Sessions](/sessions/) | Detailed session transcripts |
 | [📄 Docs](/docs/) | Charter and technical overview |
+| [📚 Glossary](/docs/glossary/) | Terms and concepts for non-technical readers |
 | [📚 Misc](/misc/) | Background reading and supplementary materials |
 
 ### AI-Lab Infrastructure

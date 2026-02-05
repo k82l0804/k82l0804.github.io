@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How Many Agents?
-permalink: /ai-lab/how-many-agents/
+permalink: /misc/how-many-agents/
 ---
 
 # How Many Agents Can We Run?

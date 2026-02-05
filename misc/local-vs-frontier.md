@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Local vs Frontier Models
-permalink: /ai-lab/local-vs-frontier/
+permalink: /misc/local-vs-frontier/
 ---
 
 # Local vs Frontier Models

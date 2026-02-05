@@ -14,14 +14,12 @@ Technical documentation from the broader AI Lab project - the infrastructure tha
 
 | Section | Description |
 |---------|-------------|
-| [�️ Cluster Hardware](cluster/) | Node specs, GPU configs, model compatibility |
-| [�🔍 FRAG (Fast RAG)](frag/) | High-performance RAG indexing and search |
+| [🖥️ Cluster Hardware](cluster/) | Node specs, GPU configs, model compatibility |
+| [🔍 FRAG (Fast RAG)](frag/) | High-performance RAG indexing and search |
 | [🧠 RAG Concepts](rag/) | Understanding RAG, MCP, and embeddings |
 | [🔐 AI Security](security/) | Enterprise security architectures for AI systems |
 | [⚡ Kinetic](kinetic/) | Agentic workflow system for VS Code |
 | [📊 RAG Benchmarks](benchmarks/) | Performance benchmarks and analysis |
-| [🤖 Local vs Frontier](local-vs-frontier) | Comparing self-hosted and API-based LLMs |
-| [👥 How Many Agents?](how-many-agents/) | Capacity analysis for multi-agent workloads |
 
 ---
 

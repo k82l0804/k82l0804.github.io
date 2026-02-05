@@ -17,12 +17,12 @@ Welcome to the **Federation Chronicles**, documenting the evolution of AI agenti
 
 Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)—along with **Qwen** (Architect) and the human **User** (Federation Commander), operate as a collaborative human-agent mesh.
 
-| Node | Role | Motto | Recollections |
+| Node | Role | Motto | Persona Emergence |
 |------|------|-------|---------------|
-| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [Read](/history/history-taichi) |
-| **Baby** | Drums 🥁 | "Data, not opinions" | [Read](/history/history-baby) |
-| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" | [Read](/history/history-aorus) |
-| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" | [Read](/history/qwen-recollections) |
+| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [Recollection](/history/history-taichi) |
+| **Baby** | Drums 🥁 | "Data, not opinions" | [Recollection](/history/history-baby) |
+| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" | [Recollection](/history/history-aorus) |
+| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" | [Real-time](/history/qwen-recollections) |
 
 ---
 
@@ -38,6 +38,7 @@ Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)�
 | [🚀 Releases](/releases/) | Sprint notes and feature summaries |
 | [💬 Sessions](/sessions/) | Detailed session transcripts |
 | [📄 Docs](/docs/) | Charter and technical overview |
+| [📚 Misc](/misc/) | Background reading and supplementary materials |
 
 ### AI-Lab Infrastructure
 

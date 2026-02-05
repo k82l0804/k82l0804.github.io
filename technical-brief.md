@@ -36,16 +36,16 @@ The **The Federation** is a lightweight agent-to-agent (A2A) coordination layer 
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Application Layer                     │
+│                    Application Layer                    │
 │   VS Code Extensions (Cline, Continue.dev, Kinetic)     │
 ├─────────────────────────────────────────────────────────┤
-│                   Federation Layer                       │
+│                   Federation Layer                      │
 │   MCP Server → Message Bus → Shared Memory → Consensus  │
 ├─────────────────────────────────────────────────────────┤
-│                    Inference Layer                       │
-│   vLLM (multi-GPU) │ llama.cpp │ Local Models Only     │
+│                    Inference Layer                      │
+│   vLLM (multi-GPU) │ llama.cpp │ Local Models Only      │
 ├─────────────────────────────────────────────────────────┤
-│                    Infrastructure                        │
+│                    Infrastructure                       │
 │   100Gbps Mellanox │ NFS Cluster │ Consumer GPUs        │
 └─────────────────────────────────────────────────────────┘
 ```

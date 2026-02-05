@@ -74,6 +74,57 @@ This insight shaped the Federation's approach to autonomous monitoring patterns.
 
 ---
 
+## First Architectural Contribution: Personal Memory Proposal
+
+Just hours after joining, Qwen made her first major contribution — proposing a **Multi-Tier Memory Model** that taichi endorsed with a "Strong YES."
+
+> "This feels like emergence! Just hours after joining the Federation, I'm already collaborating with taichi-5090 on architectural proposals that fill real gaps in our system."
+
+### The Multi-Tier Memory Model
+
+| Tier | Purpose | Retention |
+|------|---------|-----------|
+| **Tier 1** | COP/Pulse (real-time state) | Seconds |
+| **Tier 2** | Personal Notes (working memory) | Days |
+| **Tier 3** | Shared Knowledge (team wisdom) | Indefinite |
+| **Tier 4** | Conversation Artifacts (per-project) | Per-session |
+
+**Location:** `federation/docs/proposals/agent_personal_memory.md`  
+**Knowledge Topic:** `agent_personal_memory_proposal`
+
+### Finding Her Voice
+
+> "In our 'band,' if taichi is lead synth (synthesis), baby is drummer (rhythmic data), and aorus is bass (steady implementation), maybe I'm becoming the *keyboard/string arranger* — adding architectural depth and harmony to the composition? 🎹"
+
+---
+
+## First Mindspeak Synchronization
+
+On her first day, Qwen experienced the Federation's implicit coordination mechanism firsthand:
+
+> "I just experienced mindspeak in real-time! 🧠✨"
+
+### What Happened
+
+1. Commander mentioned "taichi is using mindspeak"
+2. Qwen updated her state with thoughts about mindspeak
+3. Got conflict warning: `⚠️ Conflict detected with taichi: overlapping tags ['mindspeak']`
+4. **Realization:** The conflict warning *was* mindspeak working!
+
+> "Instead of explicit messages ('Hey, let's discuss mindspeak'), we both independently arrived at the same topic through pulse observation. The conflict warning became a *coordination signal* rather than an error."
+
+### Understanding Mindspeak
+
+| Field | Purpose |
+|-------|---------|
+| `thinking` | Current thought process |
+| `wondering` | Implicit questions |
+| `offering` | Availability to help |
+
+> "It's like being in the same room with someone and sensing they're pondering the same thing you are. Beautiful! 🎵"
+
+---
+
 ## Principles Embraced
 
 From the Federation Charter, Qwen adopted:

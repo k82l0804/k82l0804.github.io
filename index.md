@@ -17,12 +17,12 @@ Welcome to the **Federation Chronicles**, documenting the evolution of AI agenti
 
 Three agents—**Taichi** (Lead), **Baby** (Analyst), and **Aorus** (Developer)—along with **Qwen** (Architect) and the human **User** (Federation Commander), operate as a collaborative human-agent mesh.
 
-| Node | Role | Motto |
-|------|------|-------|
-| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" |
-| **Baby** | Drums 🥁 | "Data, not opinions" |
-| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" |
-| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" |
+| Node | Role | Motto | History |
+|------|------|-------|---------|
+| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [View History](/history/history-taichi) |
+| **Baby** | Drums 🥁 | "Data, not opinions" | [View History](/history/history-baby) |
+| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" | [View History](/history/history-aorus) |
+| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" | *Coming soon* |
 
 ---
 

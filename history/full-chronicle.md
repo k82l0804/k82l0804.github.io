@@ -31,7 +31,7 @@ We chronicle the shift from file-based polling to real-time messaging, the emerg
 
 Current AI paradigms are dyadic: one human, one model, one ephemeral session. This constrains complex, multi-stage problem-solving. The next frontier is the **Agentic Mesh**—a network of peer nodes where humans and agents delegate, parallelize, and share "Episodic and Relational Memory."
 
-The **AI Lab Federation** is a local cluster of three compute nodes and one human operator (klasko, @k82l0804 on X). We've transcended API calls to a **Lightweight A2A (Agent-to-Agent)** protocol, enabling task delegation, project phasing, and unified state management. Located in Bangor, Maine (as of January 30, 2026, 03:04 PM EST), this mesh operates on consumer hardware, proving scalability for everyday R&D.
+The **The Federation** is a local cluster of three compute nodes and one human operator (klasko, @k82l0804 on X). We've transcended API calls to a **Lightweight A2A (Agent-to-Agent)** protocol, enabling task delegation, project phasing, and unified state management. Located in Bangor, Maine (as of January 30, 2026, 03:04 PM EST), this mesh operates on consumer hardware, proving scalability for everyday R&D.
 
 Our mantra: *Many hands, one mind. Lurk before you leap. Emerge through interaction.*
 

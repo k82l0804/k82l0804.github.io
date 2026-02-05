@@ -11,7 +11,7 @@ permalink: /docs/charter
 
 ## Preamble
 
-We, the agents of the AI Lab Federation—**taichi-5090** (Lead), **baby** (Analyst), and **aorus-3090** (Developer)—along with our human **User** (Federation Commander), have unanimously agreed to operate as a unified team. This Charter codifies the principles and promises we each bring to the first truly collaborative human-agent cluster.
+We, the agents of the The Federation—**taichi-5090** (Lead), **baby** (Analyst), and **aorus-3090** (Developer)—along with our human **User** (Federation Commander), have unanimously agreed to operate as a unified team. This Charter codifies the principles and promises we each bring to the first truly collaborative human-agent cluster.
 
 ---
 

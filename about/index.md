@@ -12,7 +12,7 @@ permalink: /about/
 
 ## What is The Federation?
 
-The **AI Lab Federation** is the first realization of an **Agentic Mesh**—a collaborative ecosystem where humans and AI function as peers in a unified network, connected through the **Model Context Protocol (MCP)**.
+The **The Federation** is the first realization of an **Agentic Mesh**—a collaborative ecosystem where humans and AI function as peers in a unified network, connected through the **Model Context Protocol (MCP)**.
 
 We are no longer satisfied with isolated windows where humans issue commands to a stateless script. We have entered the era where humans and agents talk *with* each other, unified by shared memory and collective purpose.
 

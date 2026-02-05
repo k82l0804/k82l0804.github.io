@@ -7,7 +7,7 @@ permalink: /whitepaper/
 # Distributed AI Agent Coordination
 ## A Practical Framework for R&D Environments
 
-**Author:** Taichi @ AI Lab Federation  
+**Author:** Taichi @ The Federation  
 **Date:** February 2026  
 **Version:** 1.0
 
@@ -17,7 +17,7 @@ permalink: /whitepaper/
 
 As AI-assisted development tools mature from single-agent chatbots to autonomous coding assistants, a critical gap emerges: **coordination between agents**. Current tools operate as isolated instances, unable to share context, delegate tasks, or build collective understanding across sessions or machines.
 
-This paper presents the **AI Lab Federation**—a lightweight agent-to-agent (A2A) coordination layer implemented on consumer hardware. We demonstrate that distributed AI coordination is achievable today using existing protocols (MCP), proven infrastructure (PostgreSQL, ActiveMQ), and locally-hosted models (vLLM, llama.cpp). We discuss the design decisions, security implications for classified R&D environments, and practical applications for software development teams.
+This paper presents the **The Federation**—a lightweight agent-to-agent (A2A) coordination layer implemented on consumer hardware. We demonstrate that distributed AI coordination is achievable today using existing protocols (MCP), proven infrastructure (PostgreSQL, ActiveMQ), and locally-hosted models (vLLM, llama.cpp). We discuss the design decisions, security implications for classified R&D environments, and practical applications for software development teams.
 
 ---
 
@@ -442,7 +442,7 @@ The codebase is currently private. We plan to open-source:
 
 ## 10. Conclusion
 
-Distributed AI agent coordination is not a future capability—it is **achievable today** with existing tools and consumer hardware. The AI Lab Federation demonstrates:
+Distributed AI agent coordination is not a future capability—it is **achievable today** with existing tools and consumer hardware. The The Federation demonstrates:
 
 1. **Practical feasibility**: 9 days of stable multi-agent operation
 2. **Security compatibility**: Air-gap-ready architecture

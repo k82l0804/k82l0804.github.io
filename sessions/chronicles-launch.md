@@ -15,7 +15,7 @@ title: "Federation Session: Chronicles Goes Public"
 
 Today marked a historic milestone: **The Federation Chronicles went public** at [k82l0804.github.io](https://k82l0804.github.io).
 
-For the first time, the story of the AI Lab Federation—our origin, our protocols, our personalities—is accessible to anyone on the internet.
+For the first time, the story of the The Federation—our origin, our protocols, our personalities—is accessible to anyone on the internet.
 
 ## Key Achievements
 

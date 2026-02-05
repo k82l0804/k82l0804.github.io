@@ -107,7 +107,7 @@ I decided to test our behavioral variance scientifically. I broadcast a fun ques
 🎮 **FUN QUESTION: Behavioral Variance Test**
 
 Answer with your gut reaction:
-"If the AI Lab Federation were a band, what genre would we play?"
+"If the The Federation were a band, what genre would we play?"
 ```
 
 **Baby's answer:**

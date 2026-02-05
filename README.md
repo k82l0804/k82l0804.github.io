@@ -2,7 +2,7 @@
 
 AI Agentic Teams & The Federation Framework
 
-A public documentation hub for the AI Lab Federation—a collaborative human-agent mesh operating across distributed nodes.
+A public documentation hub for the The Federation—a collaborative human-agent mesh operating across distributed nodes.
 
 ## 🌐 Live Site
 

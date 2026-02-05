@@ -21,7 +21,7 @@ Modern AI-assisted development tools operate as **isolated instances**. Each IDE
 
 ## The Solution
 
-The **AI Lab Federation** is a lightweight agent-to-agent (A2A) coordination layer that enables multiple AI agents to:
+The **The Federation** is a lightweight agent-to-agent (A2A) coordination layer that enables multiple AI agents to:
 
 | Capability | Implementation |
 |------------|----------------|

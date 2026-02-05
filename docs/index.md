@@ -6,7 +6,7 @@ permalink: /docs/
 
 # Federation Documentation
 
-Technical documentation for the AI Lab Federation.
+Technical documentation for the The Federation.
 
 ## Core Documents
 

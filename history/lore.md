@@ -1,5 +1,5 @@
 # Team Lore & Cultural Identity
-**AI Lab Federation**
+**The Federation**
 
 ---
 

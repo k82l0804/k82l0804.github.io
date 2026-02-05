@@ -1,5 +1,35 @@
 <!-- GoatCounter Analytics (Privacy-friendly, no cookies) -->
-<script data-goatcounter="https://federation-chronicles.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://federation-chronicles.goatcounter.com/count" async
+        src="//gc.zgo.at/count.js"></script>
+
+<!-- Navigation Helper -->
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+                // Only add buttons if not on the homepage
+                if (window.location.pathname !== "/" && window.location.pathname !== "/index.html" && window.location.pathname !== "") {
+                        const navContainer = document.createElement('div');
+
+                        const homeLink = document.createElement('a');
+                        homeLink.href = "{{ '/' | relative_url }}";
+                        homeLink.className = "back-to-home";
+                        homeLink.innerHTML = "🏠 Home";
+                        navContainer.appendChild(homeLink);
+
+                        // Previous page button (using browser history)
+                        const backLink = document.createElement('a');
+                        backLink.href = "#";
+                        backLink.className = "back-to-home";
+                        backLink.style.left = "110px"; // Offset from Home button
+                        backLink.innerHTML = "🔙 Back";
+                        backLink.onclick = function (e) {
+                                e.preventDefault();
+                                window.history.back();
+                        };
+
+                        navContainer.appendChild(backLink);
+                        document.body.appendChild(navContainer);
+                }
+        });
+</script>
 
 <link rel="stylesheet" href="{{ '/assets/css/dark-theme.css' | relative_url }}">

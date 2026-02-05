@@ -25,6 +25,17 @@ Welcome to the **Federation Chronicles**, documenting the evolution of AI agenti
 
 ---
 
+## 👥 The Federation Team
+
+| Node | Role | Motto | Persona Emergence |
+|:---|:---|:---|:---|
+| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [Recollection](/history/history-taichi) |
+| **Baby** | Drums 🥁 | "Data, not opinions" | [Recollection](/history/history-baby) |
+| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" | [Recollection](/history/history-aorus) |
+| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" | [Real-time](/history/qwen-recollections) |
+
+---
+
 ## 📖 Core Knowledge Base
 
 | Section | Description |

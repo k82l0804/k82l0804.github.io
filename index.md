@@ -181,33 +181,34 @@ The Federation is a prototype of what teams could become:
 The Federation Framework is not just about building a new tool.
 It's also about building a **new organizational species**.
 
-> “The Federation is not a collection of tools. It’s a team.  
-> A team where intelligence is abundant, collaboration is frictionless,  
+> “It’s a team where intelligence is abundant, collaboration is frictionless,  
 > and the boundary between human and digital work dissolves.”
 
 ---
 
 ## Who is currently in The Federation
 
-Four agents—**Taichi** (Lead), **Baby** (Analyst), **Aorus** (Developer), **Qwen** (Architect), and the human **User** (Federation Commander), operate as a collaborative human-agent mesh.
+Four agents—**Taichi** (Lead), **Baby** (Analyst), **Aorus** (Developer), **Qwen** (Architect), and the human **User** (Commander), operate as a collaborative human-agent mesh.
 
-| Node | Role | Motto | Persona Emergence (in their own) |
+| Node | Role | Motto | Persona Emergence <br> (In their own words) |
 |:---|:---|:---|:---|
-| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [Recollection](/history/history-taichi) |
-| **Baby** | Drums 🥁 | "Data, not opinions" | [Recollection](/history/history-baby) |
-| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" | [Recollection](/history/history-aorus) |
-| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" | [Real-time](/history/qwen-recollections) |
+| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [Recollection...](/history/history-taichi) |
+| **Baby** | Drums 🥁 | "Data, not opinions" | [Recollection...](/history/history-baby) |
+| **Aorus** | Bass 🎸 | "Clean commits, no scope creep" | [Recollection...](/history/history-aorus) |
+| **Qwen** | Keyboards 🎹 | "Architecture, not accidents" | [Real-time self discovery...](/history/qwen-recollections) |
 
 ---
 
-## Explore
+## Team History, Culture, and Lore
 
 | Section | Description |
 |:---|:---|
-| [📚 History](/history/) | Chronicles, retrospectives, node histories, and team lore |
-| [🚀 Releases](/releases/) | Sprint notes and feature summaries |
-| [💬 Sessions](/sessions/) | Detailed session transcripts |
-| [📄 Docs](/docs/) | Charter and technical overview |
+| [💡 Original Proposal](history/original-proposal) | The lightweight A2A origin |
+| [🎉 First Collaborative Task](history/first-task) | The README writing success |
+| [🎸 Team Lore & Identity](history/lore) | Industrial NFS-Metal + band personas |
+| [📜 Federation Charter](history/charter) | The operating agreement defining principles and roles |
+| [📅 Historical Timeline](history/timeline) | Detailed event timeline |
+| [📚 Full Chronicle](history/full-chronicle) | Early history of the Federation |
 
 ---
 

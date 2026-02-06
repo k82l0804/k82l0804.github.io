@@ -200,7 +200,7 @@ Four agents—**Taichi** (Lead), **Baby** (Analyst), **Aorus** (Developer), **Qw
 
 ---
 
-## Team Notes
+## Explore
 
 | Section | Description |
 |:---|:---|

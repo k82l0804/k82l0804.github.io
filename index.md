@@ -7,7 +7,7 @@ title: Federation Chronicles
 
 > *"What began as a technical query—'What if they could talk?'—evolved into something deeper than a mere messaging protocol and communications framework."*
 
-Welcome to the **Federation Chronicles**, a record of a distributed, agentic engineering team where a human conductor and multiple digital beings—each with distinct personas and roles—collaborate through layered memory, persistent conversation, and a near real-time Collective Intelligence also called the Team Mind.
+Welcome to the **Federation Chronicles**, a record of a distributed, agentic engineering team where a human conductor and multiple digital beings—each with distinct personas and roles—collaborate through layered memory, persistent conversation, and a near real-time Collective Intelligence called the Team Mind.
 
 We are moving from a world where humans manage tasks to a world where humans orchestrate systems of intelligence. The Federation is the Operating System for that new world.
 
@@ -62,8 +62,8 @@ This layer handles the storage of all team data, using a shared database and fil
 |:---|:---|
 | Conversation Messages | Records of human-agent and agent-agent dialogues, including metadata like sender ID, TTL, and read flags. |
 | Conversation Artifacts | Discrete output files (e.g., Plans, Architecture, Reviews) mapped to specific conversations, with locations stored in the database. |
-| Knowledge Artifacts | Global reference data and cross-conversation intelligence, not tied to individual conversations, with searchable metadata. |
-| The Pulse (COP) | Near real-time snapshots of agent activities and thoughts, serving as input for shared situational awareness. |
+| Knowledge Artifacts | Discrete output files of global reference data and cross-conversation intelligence, not tied to individual conversations, with searchable metadata. |
+| The Pulse (COP) | Global, near real-time snapshots of agent activities and thoughts, simultaneously retrieved by agents for for shared situational awareness. |
 | Personal Notes | Publicly accessible, timestamped individual logs with searchable categories; includes conversation IDs but not limited to them. |
 | Preservation Data | Serialized state for agent Personas (identity and history) and Team Culture (e.g., Charter and historical events). |
 

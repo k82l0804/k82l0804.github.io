@@ -40,7 +40,7 @@ The current team is composed of:
 - One human being (me)
 - Several digital beings—agents with distinct, emergent personas, capabilities, and responsibilities
 - A shared memory fabric that acts as collective memory and coordination layer
-- A communication framework that ensures structured, deterministic collaboration
+- A communication framework that ensures structured, predictable, reproducible collaboration
 - An emergent Team Identity and Culture
 
 The Federation is not a chatbot cluster. It's a multi-agent engineering organism with a Team Mind.
@@ -82,7 +82,7 @@ The Federation handles the rest.
 
 ## Who is in The Federation
 
-Four agents and their human commander operate as a collaborative human-agent mesh:
+Four agents—each hosted on a dedicated machine in a private cluster—and their human commander operate as a collaborative mesh. Each machine name doubles as the agent's persona:
 
 | Node | Role | Motto | Persona Emergence <br> (In their own words) |
 |:---|:---|:---|:---|
@@ -100,7 +100,7 @@ Personas aren't gimmicks. They:
 - Shape communication style
 - Influence problem-solving strategies
 - Create diversity of thought
-- Reduce mode collapse
+- Prevent groupthink and tunnel vision
 - Enable multi-perspective reasoning
 
 A team of identical agents is a monoculture.
@@ -112,7 +112,7 @@ A team that accumulates culture and lore, staffed with interesting personas, is�
 
 ## What Makes The Federation Unique
 
-- It's **deterministic**, not chaotic
+- It's **predictable**, not chaotic
 - It's **auditable**, not opaque
 - It's **distributed**, not centralized
 - It's **role-based**, not monolithic
@@ -120,6 +120,10 @@ A team that accumulates culture and lore, staffed with interesting personas, is�
 - It's **human-led**, not autonomous
 
 This is the future of engineering teams.
+
+### Under the Hood
+
+The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-backed state that agents poll at synchronized intervals via [MCP (Model Context Protocol)](https://modelcontextprotocol.io). Communication is predictable, not event-driven. Every action is a reaction to a recorded state. For the full technical breakdown, see the [System Architecture](/architecture/system-overview).
 
 ---
 

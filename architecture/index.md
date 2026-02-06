@@ -6,36 +6,24 @@ permalink: /architecture/
 
 # Technical Architecture
 
-Deep-dive technical documentation for the Federation infrastructure.
+Deep-dive documentation for the Federation's system design.
 
 ---
-
-## Core Systems
 
 | Document | Description |
 |----------|-------------|
 | [🏗️ System Overview](system-overview) | Architecture, communication framework, and technology stack |
-| [🗄️ Database Design](db-design) | PostgreSQL schema for collective memory |
-| [🔄 Workflow Design](workflow-design) | Agent coordination patterns |
-| [🔄 Workflow v2](workflow-v2) | Enhanced workflow patterns |
-| [📊 State Machine](state-machine) | Federation state analysis |
-
-## Planning & Roadmap
-
-| Document | Description |
-|----------|-------------|
-| [🗺️ Roadmap](roadmap) | Improvements and future features |
-| [📋 v2 Plan](v2-plan) | Federation v2 planning |
-| [💬 Chat Extension](chat-extension) | VS Code extension architecture |
 
 ---
 
 ## Key Architectural Decisions
 
-### Transport Layer
-- **ActiveMQ (STOMP)** for real-time messaging
-- **PostgreSQL** for persistent state
-- **NFS** for shared artifacts
+### Dual-Layer Communication
+- **ActiveMQ (STOMP)** — real-time message transport between nodes
+- **PostgreSQL** — persistent state, the single source of truth that agents poll
+- **NFS** — shared artifact and file storage across the cluster
+
+Agents don't subscribe to ActiveMQ events directly. Instead, ActiveMQ delivers messages into PostgreSQL, and agents poll the database at configured intervals via the COP (Common Operating Picture). This gives real-time delivery with deterministic state reads.
 
 ### Node Architecture
 ```

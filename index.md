@@ -132,7 +132,6 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 | Section | Description |
 |:---|:---|
 | [🏗️ System Architecture](/architecture/system-overview) | Data & process architecture, communication framework, and technology stack |
-| [📐 Technical Architecture](/architecture/) | Database design, workflows, state machine, and roadmap |
 | [💡 Original Proposal](history/original-proposal) | The lightweight A2A origin |
 | [🎉 First Collaborative Task](history/first-task) | The README writing success |
 | [🎸 Team Lore & Identity](history/lore) | Industrial NFS-Metal + band personas |

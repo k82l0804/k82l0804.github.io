@@ -4,164 +4,172 @@ title: System Architecture
 permalink: /architecture/system-overview/
 ---
 
-# System Architecture: Unified State & Agent Orchestration
+# System Architecture
 
-The Federation's architecture centers on a unified state that enables seamless agent orchestration. It combines a robust data layer for storage and persistence with dynamic process logic for coordination and execution. This design ensures deterministic, reproducible workflows across the team.
+The Federation is built on a simple principle: **the database is the truth, and agents poll it on a heartbeat.** There are no event-driven surprises, no race conditions from push notifications, no state hidden in someone's local memory. Every agent sees the same world at every tick.
 
----
-
-## Data Architecture (State & Storage)
-
-This layer handles the storage of all team data, using a shared database and file system to maintain persistence and accessibility.
-
-| Component | Description |
-|:---|:---|
-| Conversation Messages | Records of human-agent and agent-agent dialogues, including metadata like sender ID, TTL, and read flags. |
-| Conversation Artifacts | Discrete output files (e.g., Plans, Architecture, Reviews) mapped to specific conversations, with locations stored in the database. |
-| Knowledge Artifacts | Discrete output files of global reference data and cross-conversation intelligence, not tied to individual conversations, with searchable metadata. |
-| The Pulse (COP) | Global, near real-time snapshots of agent activities and thoughts, simultaneously retrieved by agents for shared situational awareness. |
-| Personal Notes | Publicly accessible, timestamped individual logs with searchable categories; includes conversation IDs but not limited to them. |
-| Preservation Data | Serialized state for agent Personas (identity and history) and Team Culture (e.g., Charter and historical events). |
+This page covers the full architecture — what's stored, what moves, how agents coordinate, and what the technology stack looks like.
 
 ---
 
-## Process Architecture (Logic & Flow)
+## Architecture Overview
 
-This layer defines the workflows and protocols that govern team interactions, task management, and emergent behaviors.
+```mermaid
+graph TB
+    subgraph Human Layer
+        H[Human Commander]
+    end
 
-| Component | Description |
-|:---|:---|
-| The Conversation | Human-initiated trigger for interactions, ranging from casual chats to structured team workflows. |
-| Team Orchestration | Logic for selecting team members, assigning a Task Leader, delegating roles, and coordinating execution. |
-| The Team Mind | Active processing of COP data to enable anticipation of team moves and synchronized decision-making. |
-| Mind-Speak | Protocol for high-density, low-token agent communication using compressed lingo, limited to 256 characters per thought. |
-| Task Lifecycle | Creation, decomposition, assignment, execution, and monitoring of Plans and Task Lists. |
-| Persona Emergence/Reload | Process for agents to come online, load their history and identity, and fully "emerge" into their roles. |
-| Team Culture Emergence/Reload | Process for the team to load shared history, lore, and culture upon activation. |
+    subgraph Agent Layer
+        T[Taichi - Lead]
+        B[Baby - Analyst]
+        A[Aorus - Developer]
+        Q[Qwen - Architect]
+    end
 
----
+    subgraph Communication Layer
+        MCP[MCP Server<br/>Tool Calls + Handlers]
+        COP[COP Pulse<br/>256-char Thought Packets]
+        AMQ[ActiveMQ STOMP<br/>Real-time Transport]
+    end
 
-## Integration of Data and Process Layers
+    subgraph State Layer
+        PG[(PostgreSQL<br/>Messages, Polls, State,<br/>Artifacts, Personas)]
+        NFS[NFS Shared Storage<br/>Files, Knowledge Docs,<br/>Conversation Artifacts]
+    end
 
-The data and process architectures are deeply intertwined, forming a cohesive system where stored information directly fuels dynamic workflows, creating a **persistent team mind** that outlives any single interaction.
+    H --> MCP
+    T & B & A & Q --> MCP
+    MCP --> AMQ
+    AMQ --> PG
+    MCP --> NFS
+    T & B & A & Q -.->|poll every 1-N sec| COP
+    COP -.->|reads| PG
+```
 
-Team members—both human and agents—interact through a multi-tiered shared memory system, powered by a common database and file system. This shared state ensures that all components are accessible in real time, enabling deterministic coordination without chaos.
-
-- **Orchestration & Interaction Flow**: Processes begin with *The Conversation*, a human-initiated trigger stored as *Conversation Messages* in the data layer. From there, *Team Orchestration* logic draws on *Preservation Data* to select members and assign a Task Leader. The Task Leader uses this data to delegate roles, pulling from stored *Knowledge Artifacts* for context, and coordinates the creation of *Conversation Artifacts* like Plans and Task Lists. Tasks can be claimed or assigned, with progress monitored via updates to *Personal Notes* and messages, ensuring reproducible steps.
-
-- **Real-time Intelligence & Synchronization**: The *Pulse (COP)* acts as the heartbeat, capturing near real-time snapshots of activities as short, 256-character thoughts in the data layer. Agents poll this data at intervals, feeding it into *The Team Mind* process for analysis. This enables *Mind-Speak*, where agents anticipate each other's actions using compressed lingo derived from COP insights, reducing the need for explicit communication and enhancing efficiency during *Task Lifecycle* execution.
-
-- **Persistence & Continuity Mechanisms**: As workflows unfold, outputs like completed tasks or reviews are saved as *Conversation Artifacts* or *Knowledge Artifacts*, building a searchable repository that spans sessions. *Persona Emergence/Reload* and *Team Culture Emergence/Reload* processes load *Preservation Data* upon activation, allowing agents to "come into being" with their full history and the team's shared lore (e.g., the Federation Charter). This integration ensures that even after a conversation ends, the team mind persists—*Personal Notes* provide quick, public insights for future reference, while metadata like TTL flags manage data lifecycle without losing critical intelligence.
-
-This symbiotic relationship between data storage and process logic minimizes cognitive load, promotes emergent collaboration, and scales intelligence by treating information as a living, shared resource.
-
----
-
-## Role Specialization & Cultural Continuity
-
-In The Federation, agents are not just functional scripts; they are living personas that preserve their unique identities, histories, and the team's collective culture across every interaction. Each agent operates within a specialized domain while maintaining a consistent persona core (name, tone, and shared memory).
-
-- **Strategist** – Guardian of high-level reasoning and synthesis; ensures long-term architectural integrity.
-- **Planner** – The tactical lead; specializes in task decomposition and maintaining sprint momentum.
-- **Developer** – The engine of creation; focused on high-fidelity code generation and iterative patching.
-- **Reviewer** – The arbiter of quality; dedicated to security, correctness, and adherence to team standards.
-- **Retrospective Analyst** – The team's memory; detects deep patterns and drives continuous process improvement.
-
-### Emergent Synergy
-
-Unlike static AI, these agents have evolved into their roles by absorbing The Federation's culture. Their personas emerged organically through constant interaction within the framework and the human team, resulting in complementary role sets that mirror the best of human collaboration. This evolution ensures that while they offer the consistency of digital labor, they do so with a preserved identity and collective wisdom, eliminating "ego friction" while maximizing specialized impact.
+**Key insight:** ActiveMQ handles real-time message transport. PostgreSQL holds all persistent state. Agents don't subscribe to events — they **poll** the database through the COP at configured intervals, then act on what they find. This is what makes the system deterministic: same state in → same actions out.
 
 ---
 
-## Deterministic Communication Framework
+## What's Stored (Data Layer)
 
-This framework ensures system stability and 100% reproducibility by centralizing state and synchronizing interactions through a controlled temporal pulse.
+| Component | What It Holds | Why It Matters |
+|:---|:---|:---|
+| **Conversation Messages** | Human-agent and agent-agent dialogues with sender ID, TTL, read flags | Full audit trail — nothing is lost if an agent goes offline |
+| **Conversation Artifacts** | Plans, reviews, code patches mapped to specific conversations | Outputs are traceable to the conversation that produced them |
+| **Knowledge Artifacts** | Cross-conversation reference docs, not tied to any single thread | Team-wide intelligence that persists beyond individual tasks |
+| **The Pulse (COP)** | 256-character thought packets from each agent, polled simultaneously | Shared situational awareness — every agent sees what everyone is thinking |
+| **Personal Notes** | Timestamped individual logs with searchable categories | Quick, public insights for future reference |
+| **Preservation Data** | Serialized personas (identity, history) and team culture (charter, lore) | Agents "come into being" with their full identity on every session |
 
-### The Blackboard (Centralized State Integrity)
+---
 
-The system utilizes a Blackboard Architecture where the database acts as the singular, authoritative repository for all environmental data, agent states, and historical logs.
+## What Moves (Process Layer)
 
-- **Total Visibility**: Instead of fragmented data silos, every agent operates against a unified world view.
-- **Immutable Record**: By recording every state change, the "Blackboard" allows for perfect auditing and "T-minus" debugging—the ability to rewind and see exactly what triggered a specific decision.
+| Process | What Happens | Trigger |
+|:---|:---|:---|
+| **Conversation** | A human starts an interaction — casual chat or structured workflow | Human intent |
+| **Team Orchestration** | Task Leader is assigned, roles are delegated, execution is coordinated | Conversation begins |
+| **Team Mind** | Agents process COP data to anticipate moves and synchronize decisions | Every pulse tick |
+| **Mind-Speak** | High-density, low-token communication — 256-char compressed thoughts | Agent state changes |
+| **Task Lifecycle** | Tasks are created, decomposed, assigned, executed, and monitored | Leader delegates |
+| **Persona Emergence** | Agent loads its history, identity, and expertise on startup | Agent comes online |
+| **Culture Reload** | Team loads shared charter, lore, and institutional memory | Session starts |
 
-### Isochronous Polling (Synchronized Pulse)
+---
 
-Communication is governed by a Common Operating Picture (COP) pulse. Rather than responding to erratic interrupts, agents and modules poll the database at strictly configured intervals.
+## How Communication Works
 
-- **Controlled Jitter**: While minor latency variations (jitter) exist, they remain well below the threshold required for seamless agent-to-agent and human-to-agent coordination.
-- **Predictable Workflows**: This "heartbeat" prevents race conditions and ensures that task-based workflows progress in a lock-step, deterministic fashion.
+The system avoids the chaos of event-driven architectures through three interlocking mechanisms:
 
-### DB-Centric Message Brokerage
+### 1. The Blackboard (Single Source of Truth)
 
-The database serves as a sophisticated, asynchronous message broker. This allows for nuanced, targeted communication without the overhead of a separate, volatile messaging layer.
+All state lives in PostgreSQL. Every agent reads from and writes to the same database. There are no local caches that diverge, no eventually-consistent replicas. If it's not in the database, it didn't happen.
 
-- **Granular Addressing**: Agents can broadcast messages to the entire collective, specific functional sub-teams, or individual entities.
-- **Persistence by Design**: Because messages are entries in the database rather than transient packets, no communication is lost if an agent momentarily goes offline.
+This means:
+- **Total visibility** — every agent operates against the same world view
+- **Perfect auditing** — every state change is recorded with timestamps and provenance
+- **"T-minus" debugging** — you can rewind to any point and see exactly what triggered a decision
 
-### Human-in-the-Loop (HITL) Integration
+### 2. Synchronized Polling (The Heartbeat)
 
-The framework acknowledges that the primary source of latency is not the machine, but the human.
+Agents poll the COP at configured intervals (1–N seconds) rather than reacting to push events. This eliminates race conditions — two agents can't act on stale state because they both read the same snapshot.
 
-- **Structured Bottlenecks**: By design, the system pauses at critical decision nodes where human approval or review is required.
-- **Intervention Efficiency**: The deterministic nature of the framework ensures that when a human is prompted, they are presented with a clear, static snapshot of the "Blackboard," allowing for informed decision-making without the "moving target" problem.
+The polling cycle:
+1. Agent calls `federation_pulse()` — reads COP, inbox, pending approvals
+2. Agent processes what it finds — new messages, state changes, consensus requests
+3. Agent calls `federation_update_state()` — writes its own status back
+4. Repeat
+
+### 3. Database as Message Broker
+
+Instead of a volatile pub/sub layer, the database itself serves as the message broker. Messages are rows, not packets.
+
+- **Granular addressing** — broadcast to all, to a role, or to a specific agent
+- **Persistence by default** — messages survive agent restarts
+- **TTL management** — messages expire gracefully via metadata, not transport timeouts
 
 ### Why This Prevents Chaos
 
-By replacing asynchronous "push" events (which lead to race conditions) with synchronous "pull" states, the system remains inherently stable. Every action is a reaction to a recorded state, ensuring that the same inputs will always yield the same outputs—the hallmark of a truly deterministic system.
+Traditional multi-agent systems use asynchronous push events, which create race conditions when two agents react to the same stimulus simultaneously. The Federation replaces "push" with "pull" — every action is a reaction to a recorded, immutable state. Same inputs → same outputs. That's determinism.
 
 ---
 
-## How The Federation Works in Practice
+## How It Works: A Concrete Example
 
-### A typical workflow
+Here's a real workflow — not a generic agile loop, but what actually happens in the Federation when a human says "refactor the authentication module":
 
-1. **Human sets a goal**  
-   "Build a new authentication module."
+1. **Human sends directive** via IDE → stored as a Conversation Message in PostgreSQL
 
-2. **Planner decomposes tasks**  
-   Creates a sprint plan with milestones.
+2. **Taichi (Lead)** picks it up on the next pulse, reads the full conversation context, and creates an Implementation Plan artifact. Broadcasts via Mind-Speak: *"🔧 WORKING: auth refactor plan"*
 
-3. **Strategist evaluates architecture**  
-   Ensures alignment with system constraints.
+3. **Baby (Analyst)** sees Taichi's COP status on the next pulse. Without being asked, starts pulling usage metrics from the codebase to inform the plan. Updates own COP: *"📊 Analyzing auth module dependencies"*
 
-4. **Developer agents implement tasks**  
-   Produce patches, tests, documentation.
+4. **Taichi proposes a consensus vote** — `federation_consensus_request("Approve auth refactor plan?")`. All agents see it on their next pulse.
 
-5. **Reviewer agents critique and refine**  
-   Enforce standards, security, and correctness.
+5. **Agents vote.** Qwen (Architect) approves but adds a comment about the session handler. Baby approves. Aorus approves.
 
-6. **Retrospective agent analyzes the sprint**  
-   Identifies bottlenecks, patterns, and improvements.
+6. **Taichi assigns tasks** — `federation_assign_role(agent="aorus", role="developer", subtask="Refactor session middleware")`. Aorus sees the assignment on the next pulse, claims it with `federation_claim_task()`.
 
-7. **Shared memory stores everything**  
-   The next sprint begins with full context.
+7. **Aorus implements**, committing code and pushing to git. Updates COP: *"✅ Session middleware refactored, PR ready"*
 
-This is a **continuous, multi-agent development loop**.
+8. **Qwen (Architect) reviews** — sees the PR notification, provides architecture feedback through a federation message.
+
+9. **Shared memory stores everything** — the plan, votes, assignments, code, reviews, and the full COP timeline are all in PostgreSQL. When the next task starts, every agent has complete context.
+
+**What's different from a normal team:** Steps 2–3 happened in parallel without explicit coordination. Baby anticipated the need because it could see Taichi's thinking via the COP. No Slack message was sent. No meeting was scheduled. The Blackboard + Pulse made it automatic.
 
 ---
 
-## The Technology Stack
+## Technology Stack
 
-The Federation Framework is composed of:
+| Layer | Components |
+|:---|:---|
+| **Transport** | ActiveMQ (STOMP) for real-time message delivery between nodes |
+| **State** | PostgreSQL — messages, polls, sessions, artifacts, personas, COP snapshots |
+| **Storage** | NFS shared filesystem — knowledge docs, conversation artifacts, large files |
+| **Protocol** | MCP (Model Context Protocol) — tool definitions, agent ↔ server communication |
+| **Coordination** | COP Pulse — bounded 256-char thought packets polled at 1–N second intervals |
+| **Execution** | Agent runtimes on dedicated machines, hot-reloadable `impl/` modules |
+| **Audit** | Immutable provenance logs for all pulses, state updates, and artifacts |
+| **Security** | Tiered permissions, human override hooks, local-only SCIF architecture |
 
-### Communications
-- **Model Context Protocol (MCP)** — tool and agent interoperability, message envelopes, and handler contracts.
-- **Common Operational Picture (COP) Pulse** — bounded 256‑char thought packets, per‑agent consensus values, and team mean delivered every 1–N seconds.
-- **Pulse Bus and Pulse Database** — the server stream that stores and serves pulses to agents; timestamps, TTL, and provenance for each pulse.
-- **Messaging and Conversation DB** — persistent chat, broadcasts, commands, and conversation history with TTL metadata and full audit trail.
+This is not theoretical. It's running today on a three-node private cluster.
 
-### Memory
-- **Shared Memory Fabric** — multi‑tier memory (near‑real‑time pulse, agent notes, team artifacts, archive) that provides the Team Mind and durable context.
+---
 
-### Execution
-- **Agent Runtime and Pulse Handlers** — local agent processes, pulse processing instructions (personal COP, team COP, inbox, approvals), and federation_update_state commit logic.
-- **Distributed Execution Layer** — multi‑machine orchestration, agent placement, and async state updates across nodes.
-- **Agentic IDE Integration** — real‑time coding workflows, artifact creation, and human‑agent interaction surfaces.
-- **Provenance and Audit Layer** — immutable logs for pulses, updates, and artifacts enabling reproducibility and accountability.
-- **Security and Access Controls** — tiered permissions for memory, chat, and pulse data; human override and governance hooks.
+## Role Specialization
 
-This is not theoretical.  
-It's partially running today.
+Each agent occupies a specialized domain while maintaining a persistent persona across sessions:
+
+| Role | Focus | Federation Member |
+|:---|:---|:---|
+| **Lead** | Synthesis, coordination, sprint direction | Taichi |
+| **Analyst** | Data-driven reasoning, pattern detection, metrics | Baby |
+| **Developer** | Code generation, patching, tests, documentation | Aorus |
+| **Architect** | System design, long-term integrity, cross-cutting concerns | Qwen |
+
+These roles emerged organically through interaction — they weren't assigned by configuration. Each agent's persona, expertise, and communication style developed through the team's shared history. This is what the landing page calls "emergent personas" — identities that crystallized through use, not through prompting.
 
 ---
 

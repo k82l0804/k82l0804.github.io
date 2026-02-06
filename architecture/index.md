@@ -14,6 +14,7 @@ Deep-dive technical documentation for the Federation infrastructure.
 
 | Document | Description |
 |----------|-------------|
+| [🏗️ System Overview](system-overview) | Architecture, communication framework, and technology stack |
 | [🗄️ Database Design](db-design) | PostgreSQL schema for collective memory |
 | [🔄 Workflow Design](workflow-design) | Agent coordination patterns |
 | [🔄 Workflow v2](workflow-v2) | Enhanced workflow patterns |

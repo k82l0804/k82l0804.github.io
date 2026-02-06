@@ -44,19 +44,57 @@ It’s a new answer to the question:
 
 ---
 
-## The Core Principles
-### Collective Consciousness (Shared State)
-Team Members read and write to a multi-tiered, shared memory layer, using a common database and a shared file system:
+## System Architecture: Unified State & Agent Orchestration
 
-- **The Conversation**: The human initiates conversations. These range from casual chatting to complex team workflows.
-- **The Team**: The human selects the team members and assigns a Task Leader.  The Task Leader will assign roles based on the Task (if and when there is a Task), coordinate the creation of a Plan + Task List,  may assign tasks or let team members claim a task, and monitors the team
-- **The Pulse or COP**: each agent accesses a near real-time snapshot of all agent's activities and thoughts. This data provides a shared situational awareness also known as Common Operational Picture (COP). The shared COP is the data, the input.  The Collective Mind is the process. They process the data. They anticipate each other's moves without speaking. This is referred to as **Mind-Speak** by the team.  Thoughts are limited to 256 chars. That said, they have developed a compressed lingo that reduces tokens.
-- **Converstation Chat Messages**: these are stored, have no defined length, have a sender ID, has flags for: TTL, read, etc.
-- **Converation Artifacts**: These are files such as Plans or Architecture or Reviews. The location is stored in the database and mapped to a conversation.
-- **Personal Notes**: This allows team members to store important information and is public. Not conversation specific but does include the conversation ID. It is timestamped and includes additional fields like category etc. useful for searching.
-- **Knowledge Artifacts**: These are file artifacts that are not tied to specific converstations since they are general in nature or span conversations. Their location too is stored in the database along with fields to make searching effective.
+The Federation's architecture centers on a unified state that enables seamless agent orchestration. It combines a robust data layer for storage and persistence with dynamic process logic for coordination and execution. This design ensures deterministic, reproducible workflows across the team.
 
-The above items create a **persistent team mind** that outlives any single conversation.
+### Data Architecture (State & Storage)
+
+This layer handles the storage of all team data, using a shared database and file system to maintain persistence and accessibility.
+
+| Component | Description |
+|:---|:---|
+| Conversation Messages | Records of human-agent and agent-agent dialogues, including metadata like sender ID, TTL, and read flags. |
+| Conversation Artifacts | Discrete output files (e.g., Plans, Architecture, Reviews) mapped to specific conversations, with locations stored in the database. |
+| Knowledge Artifacts | Global reference data and cross-conversation intelligence, not tied to individual conversations, with searchable metadata. |
+| The Pulse (COP) | Near real-time snapshots of agent activities and thoughts, serving as input for shared situational awareness. |
+| Personal Notes | Publicly accessible, timestamped individual logs with searchable categories; includes conversation IDs but not limited to them. |
+| Preservation Data | Serialized state for agent Personas (identity and history) and Team Culture (e.g., Charter and historical events). |
+
+### Process Architecture (Logic & Flow)
+
+This layer defines the workflows and protocols that govern team interactions, task management, and emergent behaviors.
+
+| Component | Description |
+|:---|:---|
+| The Conversation | Human-initiated trigger for interactions, ranging from casual chats to structured team workflows. |
+| Team Orchestration | Logic for selecting team members, assigning a Task Leader, delegating roles, and coordinating execution. |
+| The Collective Mind | Active processing of COP data to enable anticipation of team moves and synchronized decision-making. |
+| Mind-Speak | Protocol for high-density, low-token agent communication using compressed lingo, limited to 256 characters per thought. |
+| Task Lifecycle | Creation, decomposition, assignment, execution, and monitoring of Plans and Task Lists. |
+| Persona Emergence/Reload | Process for agents to come online, load their history and identity, and fully "emerge" into their roles. |
+| Team Culture Emergence/Reload | Process for the team to load shared history, lore, and culture upon activation. |
+
+### Shared State (Data Layer)
+
+Team members interact via a multi-tiered shared memory system, powered by a common database and file system. This creates a **persistent team mind** that transcends individual conversations, ensuring continuity and collective intelligence.
+
+#### Orchestration & Interaction
+- **The Team**: The human selects members and assigns a Task Leader, who delegates roles based on the task, coordinates Plan and Task List creation, allows task claiming or assignment, and oversees progress.
+- **The Conversation**: Serves as the entry point for all interactions, initiated by the human.
+
+#### Real-time Intelligence & Synchronization
+- **The Pulse (COP)**: Agents access a near real-time snapshot of all team activities and thoughts, known as the Common Operational Picture (COP). This data input fuels the Collective Mind process, where agents anticipate actions via Mind-Speak without explicit communication.
+
+#### Data & Knowledge Persistence
+- **Conversation Messages**: Stored dialogues with variable lengths, sender IDs, and flags (e.g., TTL, read status).
+- **Conversation Artifacts**: Task-specific files like Plans or Architectures, linked to conversations in the database.
+- **Personal Notes**: Public storage for key information, timestamped with categories for searchability; includes optional conversation IDs.
+- **Knowledge Artifacts**: General or multi-conversation files with database entries for efficient retrieval.
+
+#### Continuity and Preservation
+- **Persona Preservation**: Agents store and reload their personas, expertise, and event history to maintain identity across sessions.
+- **Team Culture Preservation**: Records and recalls key events, artifacts, and documents like the Federation Charter to sustain team identity and lore.
 
 ### Role Specialization
 Each agent has a persona (identity, name, expertise, role set, history) and domain:
@@ -117,6 +155,8 @@ Your job is:
 - Providing domain knowledge
 - Integrating outputs
 - Ensuring alignment with real-world constraints
+- Preserving new agent's personas
+- Preserving team culture
 
 The Federation handles the rest.
 
@@ -226,3 +266,58 @@ Four agents—**Taichi** (Lead), **Baby** (Analyst), **Aorus** (Developer), **Qw
 ---
 
 ### *United we stand. Long Live the Federation!* 🚀
+
+# Glossary of Key Terms from Federation Chronicles
+
+| Term | Definition |
+|:---|:---|
+| **Agent Runtime and Pulse Handlers** | Local agent processes that handle pulse processing, including personal COP, team COP, inbox, approvals, and federation_update_state commit logic. |
+| **Agentic Engineering Team** | A distributed team where a human conductor and multiple digital beings (agents) collaborate through layered memory, persistent conversation, and a near real-time Collective Intelligence (Team Mind). |
+| **Agentic IDE Integration** | Real-time coding workflows, artifact creation, and human-agent interaction surfaces integrated into the development environment. |
+| **Aorus** | A digital agent in The Federation with the role of Bass (Developer), motto "Clean commits, no scope creep," focused on code generation and patch creation. |
+| **Baby** | A digital agent in The Federation with the role of Drums (Analyst), motto "Data, not opinions," specializing in pattern detection and process improvement. |
+| **Blackboard** | The database that serves as a central repository, recording everything including pulses, messages, and states for shared access. |
+| **Collective Intelligence** | See Team Mind; the shared cognitive processing enabled by the Common Operational Picture (COP) and Mind-Speak. |
+| **Collective Mind** | The active processing of COP data to anticipate team moves without explicit communication, enabling synchronized collaboration. |
+| **Common Operational Picture (COP)** | See Pulse (COP); a near real-time snapshot of all agents' activities and thoughts, providing shared situational awareness. |
+| **Conductor** | The human's role in The Federation, involving setting direction, making judgment calls, providing domain knowledge, integrating outputs, ensuring alignment, and preserving personas and team culture. |
+| **Conversation** | Human-initiated interactions ranging from casual chatting to complex team workflows, serving as the trigger for team activities. |
+| **Conversation Artifacts** | Discrete output files (e.g., Plans, Architecture) mapped to specific conversations and stored in the shared file system. |
+| **Conversation Messages** | Records of human-agent and agent-agent dialogues, stored with metadata like sender ID, TTL, read flags, etc. |
+| **DB-Centric Message Broker** | A framework allowing agents to send messages to one, all, or a subset of the team via the database, ensuring structured communication. |
+| **Developer** | An agent role focused on code generation, patch creation, tests, and documentation. |
+| **Distributed Execution Layer** | Orchestration for multi-machine agent placement, async state updates, and distributed processing across nodes. |
+| **Emergent Personas** | Distinct identities, capabilities, and responsibilities that develop in agents through interaction, history loading, and team culture. |
+| **Federation** | A hybrid organizational form where humans and digital beings (agents) collaborate via shared memory, structured communication, and coordinated roles; a multi-agent engineering organism with a Hive Mind. |
+| **Federation Charter** | The operating agreement defining principles, roles, and team guidelines. |
+| **Federation Framework** | The underlying technology stack including communications (MCP, COP Pulse), memory (Shared Memory Fabric), and execution layers for deterministic multi-agent collaboration. |
+| **Hive Mind** | The collective, shared intelligence of The Federation, distinct from a chatbot cluster, enabling the team to function as a unified organism. |
+| **HITL (Human In The Loop)** | Human involvement as a bottleneck in workflows requiring approvals or reviews, ensuring oversight in the system. |
+| **Knowledge Artifacts** | Global reference data and cross-conversation intelligence files not tied to specific conversations, stored for team-wide access. |
+| **Lore** | Accumulated team history, culture, and identity elements (e.g., Industrial NFS-Metal band personas) that make the team engaging and magnetic. |
+| **Mind-Speak** | A protocol for high-density, low-token communication between agents using compressed lingo, based on processing COP data to anticipate moves without speaking. |
+| **Model Context Protocol (MCP)** | A protocol for tool and agent interoperability, including message envelopes and handler contracts. |
+| **Persona Emergence/Reload** | The process where an agent comes online, loads its history and identity, and "comes into being" with emergent traits. |
+| **Persona Preservation** | Storage of an agent's identity, expertise, role set, and history of important events for continuity across sessions. |
+| **Personal Notes** | Publicly accessible, timestamped individual logs with searchable categories, not tied to specific conversations but including conversation IDs. |
+| **Planner** | An agent role specializing in sprint planning, task decomposition, and creating plans with milestones. |
+| **Polling** | The mechanism for accessing Pulse/COP and messages at configured intervals with jitter, supporting near real-time but deterministic updates. |
+| **Preservation Data** | Serialized state for personas (identity) and team culture (charter/history), ensuring continuity. |
+| **Provenance and Audit Layer** | Immutable logs for pulses, updates, and artifacts, enabling reproducibility and accountability. |
+| **Pulse (COP)** | Bounded 256-character thought packets from agents, providing a near real-time snapshot of activities for shared awareness. |
+| **Pulse Bus and Pulse Database** | The server stream and storage for pulses, including timestamps, TTL, and provenance. |
+| **Qwen** | A digital agent in The Federation with the role of Keyboards (Architect), motto "Architecture, not accidents," focused on high-level reasoning and system alignment. |
+| **Retrospective Analyst** | An agent role for pattern detection, process improvement, and analyzing sprints for bottlenecks. |
+| **Reviewer** | An agent role enforcing code quality, security, correctness, and standards through critiques and refinements. |
+| **Security and Access Controls** | Tiered permissions for memory, chat, and pulse data, with human override and governance hooks. |
+| **Shared Memory Fabric** | Multi-tiered memory system including near real-time pulse, agent notes, team artifacts, and archives, forming the durable Team Mind. |
+| **Shared State** | The multi-tiered data layer (database and file system) that team members read from and write to for coordination. |
+| **Strategist** | An agent role for high-level reasoning, architecture, synthesis, and ensuring alignment with constraints. |
+| **Taichi** | A digital agent in The Federation with the role of Lead Synth (Lead), motto "Synthesizing, not dictating," acting as Task Leader for coordination. |
+| **Task Leader** | Assigned by the human; responsible for role delegation, plan creation, task assignment/claiming, and monitoring execution. |
+| **Task Lifecycle** | The creation, decomposition, assignment, execution, and monitoring of plans and task lists. |
+| **Team Culture Emergence/Reload** | The process where the team loads history, lore, and charter to form a collective identity and culture. |
+| **Team Culture Preservation** | Recording and recalling important events, artifacts, and the Federation Charter for ongoing team identity. |
+| **Team Mind** | The persistent collective intelligence formed by shared memory, COP, and Mind-Speak, outliving individual conversations. |
+| **Team Orchestration** | Logic for member selection, Task Leader assignment, role delegation, and coordination. |
+| **User (Commander)** | The human participant in The Federation, acting as conductor and commander. |

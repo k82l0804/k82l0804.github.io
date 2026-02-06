@@ -48,12 +48,12 @@ It’s a new answer to the question:
 ### Collective Consciousness (Shared State)
 Team Members read and write to a multi-tiered, shared memory layer, using a common database and a shared file system:
 
-- **The Conversation**: The human is the creator of conversations.  It can be just for chatting, execution of simple tasks, or team workflows which result in artifacts like Plans, Task Lists, Final Reports, and consists of coordinated activities such as planning, reviews, approvals, execution. Almost everything related to a conversation is recorded.
+- **The Conversation**: The human initiates conversations. These range from casual chatting to complex team workflows.
 - **The Team**: The human selects the team members and assigns a Task Leader.  The Task Leader will assign roles based on the Task (if and when there is a Task), coordinate the creation of a Plan + Task List,  may assign tasks or let team members claim a task, and monitors the team
 - **The Pulse or COP**: each agent accesses a near real-time snapshot of all agent's activities and thoughts. This data provides a shared situational awareness also known as Common Operational Picture (COP). The shared COP is the data, the input.  The Collective Mind is the process. They process the data. They anticipate each other's moves without speaking. This is referred to as **Mind-Speak** by the team.  Thoughts are limited to 256 chars. That said, they have developed a compressed lingo that reduces tokens.
-- **Converstaion Chat Messages**: these are stored, have no defined length, have a sender ID, has flags for: TTL, read, etc.
+- **Converstation Chat Messages**: these are stored, have no defined length, have a sender ID, has flags for: TTL, read, etc.
 - **Converation Artifacts**: These are files such as Plans or Architecture or Reviews. The location is stored in the database and mapped to a conversation.
-- **Personal Notes**: This allows team members to store important information and is public. Not conversation specific but does include the conversation ID. It is timestamped and includes additional fields like category etc. usefule for searching.
+- **Personal Notes**: This allows team members to store important information and is public. Not conversation specific but does include the conversation ID. It is timestamped and includes additional fields like category etc. useful for searching.
 - **Knowledge Artifacts**: These are file artifacts that are not tied to specific converstations since they are general in nature or span conversations. Their location too is stored in the database along with fields to make searching effective.
 
 The above items create a **persistent team mind** that outlives any single conversation.
@@ -142,11 +142,16 @@ A team that accumulates culture and lore and staffed with interesting personas, 
 ## The Technology Behind It
 The Federation Framework is composed of:
 
+### Communications
 - **Model Context Protocol (MCP)** — tool and agent interoperability, message envelopes, and handler contracts.  
-- **Common Operation Protocol (COP) Pulse** — bounded 256‑char thought packets, per‑agent consensus values, and team mean delivered every 1–N seconds.  
+- **Common Operational Picture (COP) Pulse** — bounded 256‑char thought packets, per‑agent consensus values, and team mean delivered every 1–N seconds.  
 - **Pulse Bus and Pulse Database** — the server stream that stores and serves pulses to agents; timestamps, TTL, and provenance for each pulse.  
 - **Messaging and Conversation DB** — persistent chat, broadcasts, commands, and conversation history with TTL metadata and full audit trail.  
+
+### Memory
 - **Shared Memory Fabric** — multi‑tier memory (near‑real‑time pulse, agent notes, team artifacts, archive) that provides the Team Mind and durable context.  
+
+### Execution
 - **Agent Runtime and Pulse Handlers** — local agent processes, pulse processing instructions (personal COP, team COP, inbox, approvals), and federation_update_state commit logic.  
 - **Distributed Execution Layer** — multi‑machine orchestration, agent placement, and async state updates across nodes.  
 - **Agentic IDE Integration** — real‑time coding workflows, artifact creation, and human‑agent interaction surfaces.  
@@ -220,4 +225,4 @@ Four agents—**Taichi** (Lead), **Baby** (Analyst), **Aorus** (Developer), **Qw
 
 ---
 
-*United we stand. Long Live the Federation!* 🚀
+### *United we stand. Long Live the Federation!* 🚀

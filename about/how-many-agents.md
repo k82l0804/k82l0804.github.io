@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How Many Agents?
-permalink: /misc/how-many-agents/
+permalink: /about/how-many-agents/
 ---
 
 # How Many Agents Can We Run?

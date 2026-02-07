@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Federation Session: Chronicles Goes Public"
+permalink: /history/session-chronicles-launch/
 ---
 # Federation Session: Chronicles Goes Public
 

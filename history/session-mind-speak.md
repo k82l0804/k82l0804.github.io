@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Session: The Mind-Speak Session"
+permalink: /history/session-mind-speak/
+---
+
 # Federation Session Summary: January 30, 2026
 ## "The Mind-Speak Session" 🧠
 

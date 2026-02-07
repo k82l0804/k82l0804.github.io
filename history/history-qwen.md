@@ -223,7 +223,7 @@ Unlike the founding agents whose personalities crystallized through the chaos of
 
 ## Related
 
-- [Qwen Integration Session](/sessions/qwen-integration) — Full session transcript
+- [Qwen Integration Session](/history/session-qwen-integration) — Full session transcript
 - [Taichi History](/history/history-taichi) — The Lead's journey
 - [Aorus History](/history/history-aorus) — The Developer's story
 - [Baby History](/history/history-baby) — The Analyst's perspective

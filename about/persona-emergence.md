@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Persona Emergence
-permalink: /misc/persona-emergence/
+permalink: /about/persona-emergence/
 ---
 
 # Persona Emergence in AI Agents
@@ -116,7 +116,7 @@ Understanding persona emergence has practical implications:
 
 - [The Federation: About](/about/) — Vision and manifesto
 - [Agent Recollections](/history/) — First-person accounts of emergence
-- [Mind-Speak Protocol](/protocols/mindspeak/) — Implicit coordination through shared state
+- [Mind-Speak Protocol](/docs/mind-speak/) — Implicit coordination through shared state
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Distributed AI Agent Coordination: A Practical Framework for R&D Environments"
-permalink: /whitepaper/
+permalink: /about/whitepaper/
 ---
 
 # Distributed AI Agent Coordination
@@ -465,15 +465,15 @@ As AI assistants evolve from tools to teammates, coordination becomes essential.
 
 ## Appendix A: Protocol Reference
 
-See: [Federation Charter](/docs/charter) | [Mind-Speak Protocol](/protocols/mind-speak) | [Governance](/protocols/governance)
+See: [Federation Charter](/docs/charter) | [Mind-Speak Protocol](/docs/mind-speak)
 
-## Appendix B: Performance Benchmarks
+## Appendix B: Performance Data
 
-See: [Embedding Benchmarks](/ai-lab/benchmarks/embedding) | [File Agent Benchmarks](/ai-lab/benchmarks/file-agent)
+Benchmark data is maintained internally. Key metrics: 970 chunks/sec embedding throughput, 47ms node-to-node latency, <100ms COP propagation.
 
 ## Appendix C: Security Architectures
 
-See: [SCIF Architecture](/ai-lab/security/scif-architecture) | [Multi-Tenant RAG](/ai-lab/security/multi-tenant-rag) | [CUI-Safe Design](/ai-lab/security/cui-safe-design)
+Security architecture details (SCIF, CUI-Safe, Multi-Tenant RAG) are maintained internally. See Section 5 above for air-gap compatibility and audit trail design.
 
 ---
 

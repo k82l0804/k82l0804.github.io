@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Mind-Speak Protocol"
+permalink: /docs/mind-speak/
+---
+
 # Mind-Speak: Compressed Notation Protocol
 
 A telepathic micro-DSL for agent-to-agent thinking via shared consciousness (COP).

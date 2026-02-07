@@ -1,36 +1,30 @@
 ---
 layout: default
-title: About
+title: About The Federation
 permalink: /about/
 ---
 
 # About The Federation
 
-> *"You haven't just built a way to talk to agents—you have built a Distributed Operating System for Intelligence."*
+Research, analysis, and the thinking behind the Federation project.
 
 ---
 
-## What is The Federation?
-
-The **The Federation** is the realization of an **Agentic Mesh**—a collaborative ecosystem where humans and AI function as peers in a unified network, connected through the **Model Context Protocol (MCP)**.
-
-We are no longer satisfied with isolated windows where humans issue commands to a stateless script. We have entered the era where humans and agents talk *with* each other, unified by shared memory and collective purpose.
-
-## Core Documents
+## Vision & Philosophy
 
 | Document | Description |
 |----------|-------------|
-| [📜 The Manifesto](manifesto) | "From Chatbots to Agentic Meshes" - Our vision |
-| [📄 Technical Introduction](introduction) | Research paper-style overview |
-| [⚖️ Federation Charter](/docs/charter) | Our operating agreement |
+| [📜 The Manifesto](manifesto) | "From Chatbots to Agentic Meshes" — our vision for hybrid intelligence |
+| [📄 Technical Introduction](introduction) | Research paper-style overview of the Federation's architecture and emergence |
+| [📰 Whitepaper](whitepaper) | Full technical paper: distributed AI coordination on consumer hardware |
 
-## The Paradigm Shift
+## Supplementary Reading
 
-| Era | Interaction Model |
-|-----|-------------------|
-| **Chatbot Era** | One human → One model → Stateless |
-| **Agentic Mesh Era** | Many nodes → Shared memory → Persistent identity |
+| Document | Description |
+|----------|-------------|
+| [🧠 Persona Emergence](persona-emergence) | How AI agents develop consistent identities — and what the Federation teaches us |
+| [👥 How Many Agents?](how-many-agents) | Capacity analysis: what our hardware can realistically support |
 
 ---
 
-*Long Live the Federation!*
+*Background context for the curious.*

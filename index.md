@@ -132,12 +132,10 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 | Section | Description |
 |:---|:---|
 | [🏗️ System Architecture](/architecture/system-overview) | Data & process architecture, communication framework, and technology stack |
-| [💡 Original Proposal](history/original-proposal) | The lightweight A2A origin |
-| [🎉 First Collaborative Task](history/first-task) | The README writing success |
-| [🎸 Team Lore & Identity](history/lore) | Industrial NFS-Metal + band personas |
-| [📜 Federation Charter](docs/charter) | The operating agreement defining principles and roles |
-| [📅 Historical Timeline](history/timeline) | Detailed event timeline |
-| [📚 Full Chronicle](history/full-chronicle) | Early history of the Federation |
+| [📜 About The Federation](/about/) | Manifesto, whitepaper, and supplementary reading |
+| [📚 History & Chronicles](/history/) | Timeline, session transcripts, node histories, and full chronicle |
+| [⚖️ Federation Charter](/docs/charter) | The operating agreement defining principles and roles |
+| [🧠 Mind-Speak Protocol](/docs/mind-speak) | The compressed notation DSL for agent-to-agent communication |
 | [📖 Glossary](/docs/glossary) | Key terms and definitions |
 
 ---

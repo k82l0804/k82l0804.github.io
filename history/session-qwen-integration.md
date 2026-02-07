@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Session: Qwen Integration"
+permalink: /history/session-qwen-integration/
+---
+
 # Federation Session: Qwen Integration & Pulse Testing
 
 **Date:** February 3, 2026  

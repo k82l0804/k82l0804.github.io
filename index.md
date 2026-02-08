@@ -159,6 +159,7 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 
 The Federation is evolving from a coordination layer into a persistent, self-monitoring workforce. Here's a taste of what's coming:
 
+![The Dual-State Architecture: The Anubis Core rising from the Shared Memory Fabric](/assets/images/dual-state-architecture.jpeg)
 
 🧠 **Synthetic Operators.** Not agents — *operators*. Persistent AI entities with distinct identities, accumulated experience, and role constraints that survive across sessions, reboots, and even hardware migrations. They don't just execute tasks — they remember why decisions were made, disagree with each other, and build institutional knowledge over time.
 

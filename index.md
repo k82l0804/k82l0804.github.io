@@ -5,6 +5,8 @@ title: Federation Chronicles
 
 # Federation Chronicles
 
+![The Conductor: one human directing an orchestra of AI agents](/assets/images/conductor-orchestra.jpg)
+
 > *"What began as a technical query—'What if they could talk?'—evolved into something deeper than a mere messaging protocol and communications framework."*
 
 Welcome to the **Federation Chronicles**, a record of a distributed, agentic engineering team where a human conductor and multiple digital beings—each with distinct personas and roles—collaborate through layered memory, persistent conversation, and a near real-time Collective Intelligence called the Team Mind.
@@ -157,7 +159,6 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 
 The Federation is evolving from a coordination layer into a persistent, self-monitoring workforce. Here's a taste of what's coming:
 
-![The Conductor: one human directing an orchestra of AI agents](/assets/images/conductor-orchestra.jpg)
 
 🧠 **Synthetic Operators.** Not agents — *operators*. Persistent AI entities with distinct identities, accumulated experience, and role constraints that survive across sessions, reboots, and even hardware migrations. They don't just execute tasks — they remember why decisions were made, disagree with each other, and build institutional knowledge over time.
 

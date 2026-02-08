@@ -9,6 +9,8 @@ permalink: /about/whitepaper-v2/
 
 **White Paper | Revision 2.0 | February 2026**
 
+![The Dual-State Architecture: The Anubis Core (Personas, Culture & Deep Memory) rising from the Shared Memory Fabric (Postgres Relational State)](/assets/images/dual-state-architecture.jpeg)
+
 ---
 
 ## Executive Summary

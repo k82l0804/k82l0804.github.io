@@ -157,6 +157,8 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 
 The Federation is evolving from a coordination layer into a persistent, self-monitoring workforce. Here's a taste of what's coming:
 
+![The Conductor: one human directing an orchestra of AI agents](/assets/images/conductor-orchestra.jpg)
+
 🧠 **Synthetic Operators.** Not agents — *operators*. Persistent AI entities with distinct identities, accumulated experience, and role constraints that survive across sessions, reboots, and even hardware migrations. They don't just execute tasks — they remember why decisions were made, disagree with each other, and build institutional knowledge over time.
 
 🎼 **The Conductor Interface.** Today the human types. Tomorrow the human *talks*. The Federation's interface is evolving from IDE-integrated text to voice-driven orchestration — "Aorus, refactor the auth module" — to SynOps appearing as real-time participants in video conferences. Each with a distinct voice, a face, and body language that reflects their confidence level.

@@ -17,6 +17,7 @@ Research, analysis, and the thinking behind the Federation project.
 | [📜 The Manifesto](manifesto) | "From Chatbots to Agentic Meshes" — our vision for hybrid intelligence |
 | [📄 Technical Introduction](introduction) | Research paper-style overview of the Federation's architecture and emergence |
 | [📰 Whitepaper](whitepaper) | Full technical paper: distributed AI coordination on consumer hardware |
+| [🚀 Whitepaper 2.0](whitepaper-v2) | **NEW** — Dual-State Architecture, Synthetic Operators, and the human-machine teaming vision |
 
 ## Supplementary Reading
 

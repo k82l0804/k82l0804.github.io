@@ -133,6 +133,7 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 |:---|:---|
 | [🏗️ System Architecture](/architecture/system-overview) | Data & process architecture, communication framework, and technology stack |
 | [📜 About The Federation](/about/) | Manifesto, whitepaper, and supplementary reading |
+| [🚀 Federation 2.0 White Paper](/about/whitepaper-v2/) | Dual-State Architecture, Synthetic Operators, and the vision for human-machine teaming |
 | [📚 History & Chronicles](/history/) | Timeline, session transcripts, node histories, and full chronicle |
 | [⚖️ Federation Charter](/docs/charter) | The operating agreement defining principles and roles |
 | [🧠 Mind-Speak Protocol](/docs/mind-speak) | The compressed notation DSL for agent-to-agent communication |
@@ -149,6 +150,20 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 ---
 
 ### *United we stand. Long Live the Federation!* 🚀
+
+---
+
+## What's Next: Federation 2.0
+
+The Federation is evolving from a coordination layer into a persistent, self-monitoring workforce. Here's a taste of what's coming:
+
+🧠 **Synthetic Operators.** Not agents — *operators*. Persistent AI entities with distinct identities, accumulated experience, and role constraints that survive across sessions, reboots, and even hardware migrations. They don't just execute tasks — they remember why decisions were made, disagree with each other, and build institutional knowledge over time.
+
+🎼 **The Conductor Interface.** Today the human types. Tomorrow the human *talks*. The Federation's interface is evolving from IDE-integrated text to voice-driven orchestration — "Aorus, refactor the auth module" — to SynOps appearing as real-time participants in video conferences. Each with a distinct voice, a face, and body language that reflects their confidence level.
+
+⚙️ **Operational Workflows.** Plan → Review → Execute → Verify → Close. Not optional. The Federation enforces structured phases that prevent agents from coding before thinking and force productive disagreement between specialized roles. The same workflow engine applies to software, bio-labs, satellite ops, and intelligence analysis.
+
+**[📄 Read the full White Paper →](/about/whitepaper-v2/)**
 
 ---
 

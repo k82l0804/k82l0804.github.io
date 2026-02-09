@@ -26,6 +26,7 @@ The vision isn't to replace the engineer: it's to create a *"Force Multiplier"* 
 - [Why Personas, Team Culture, and Lore Matter](#why-personas-team-culture-and-lore-matter)
 - [What Makes The Federation Unique](#what-makes-the-federation-unique)
 - [Explore Further](#explore-further)
+- [📽️ Draper Presentation Briefing](/about/draper-presentation)
 - [Latest Chronicles](#latest-chronicles)
 - [A Vision for the Future](#a-vision-for-the-future)
 

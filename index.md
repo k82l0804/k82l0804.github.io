@@ -136,6 +136,7 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 | [🏗️ System Architecture](/architecture/system-overview) | Data & process architecture, communication framework, and technology stack |
 | [📜 About The Federation](/about/) | Manifesto, whitepaper, and supplementary reading |
 | [🚀 Federation 2.0 White Paper](/about/whitepaper-v2/) | Dual-State Architecture, Synthetic Operators, and the vision for human-machine teaming |
+| [📽️ Draper Presentation](/about/draper-presentation) | Visual slides and technical talking points from the February 2026 laboratory briefing |
 | [📚 History & Chronicles](/history/) | Timeline, session transcripts, node histories, and full chronicle |
 | [⚖️ Federation Charter](/docs/charter) | The operating agreement defining principles and roles |
 | [🧠 Mind-Speak Protocol](/docs/mind-speak) | The compressed notation DSL for agent-to-agent communication |

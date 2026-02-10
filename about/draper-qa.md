@@ -7,6 +7,8 @@ permalink: /about/draper-qa/
 # The Federation — Anticipated Q&A
 **Draper Laboratory Presentation | February 2026**
 
+![A human conductor meeting with her SynOp team](/assets/images/outreach/draper/synop-teams-session.png)
+
 [⬅️ Back to Presentation](/about/draper-presentation/) · [⬅️ Back to Chronicles Home](/)
 
 ---

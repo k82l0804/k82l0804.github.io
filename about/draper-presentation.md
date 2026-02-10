@@ -7,6 +7,8 @@ title: The Federation - Draper Presentation
 
 This page captures the visual slides and technical talking points from the **"The Federation"**presentation delivered to Charles Stark Draper Laboratory in February 2026.
 
+📎 **[Anticipated Q&A — Companion Document](/about/draper-qa/)**
+
 [⬅️ Back to Chronicles Home](/)
 
 ---

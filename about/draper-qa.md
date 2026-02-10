@@ -1,6 +1,7 @@
 ---
 layout: default
 title: The Federation - Draper Q&A
+permalink: /about/draper-qa/
 ---
 
 # The Federation — Anticipated Q&A

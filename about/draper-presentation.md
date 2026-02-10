@@ -308,9 +308,51 @@ This isn't *'AI will replace you.’* It's ***'AI will staff you.’***
 
 ---
 
-## Slide 10: The Dawn of The Federation
+## Slide 10: THE ROADMAP — From Proof of Concept to Operating System
 
-![Slide 10](/assets/images/outreach/draper/slide-10.png)
+![Slide 10](/assets/images/outreach/draper/slide-11.png)
+
+### Talking Points
+
+***THE ROADMAP:***
+
+Everything you've seen runs on **three machines with consumer GPUs**. That's the proof of concept. Here's how it becomes an **operating system**.
+
+**The Agent Hierarchy:**
+
+The Federation requires different classes of AI agent — not just one type doing everything. We're developing a taxonomy:
+
+- **SynOps** — the ones you've met. Human-facing collaborative agents. They work *alongside* you in an IDE, have persistent personas, exercise judgment. These are **peers**, not tools.
+- **Headless Agents** — the next tier. Machine-facing worker agents directed by SynOps, *not* humans. No GUI, no IDE overhead. They execute at scale — run 50 test suites, scan 500 documents, refactor 20 modules in parallel. One SynOp orchestrating 50 workers.
+- **Guardian Agents** — the Anubis class. *Orthogonal* to the task hierarchy. They don't do work; they **watch the workers** — monitoring context saturation, persona drift, hallucination loops. Automated quality control for the entire mesh.
+- **Embedded Agents** — lightweight, edge-deployed. Running on field hardware — lab instruments, satellites, drones — with constrained resources and intermittent connectivity.
+
+The key insight: **Humans are augmented by SynOps. SynOps are augmented by headless agents.** Each tier multiplies the capacity of the tier above it.
+
+**The Interface Evolution:**
+
+- **Today:** Text in an IDE. Powerful, but hands-on.
+- **Phase 2: Voice.** Each SynOp gets a **distinct voice** — local speech-to-text and text-to-speech. Hands-free operation. You talk to your team; they talk back.
+- **Phase 3: Visual presence.** SynOps appear as **participants in your video calls**. They present findings, debate trade-offs, and report alongside you. Your team shows up in the meeting grid.
+
+**The Hardware Path:**
+
+The architecture is hardware-agnostic. It scales by upgrading GPUs, not redesigning the system:
+
+- **Consumer** ($15-25K) — where we are today. 10-25 concurrent agents.
+- **Professional** ($30-60K) — RTX PRO 6000 class. 25-100 agents at native model precision.
+- **Enterprise** ($150K+) — H100/B200 class. 100+ agents, 200B+ models running concurrently.
+
+Same software. Same protocols. Same Mind-Speak. **Just more capacity underneath.**
+
+📎 Anticipated Q&A: https://k82l0804.github.io/about/draper-qa/
+📎 Whitepaper: https://k82l0804.github.io/about/whitepaper-v2/
+
+---
+
+## Slide 11: The Dawn of The Federation
+
+![Slide 11](/assets/images/outreach/draper/slide-10.png)
 
 ### Talking Points
 

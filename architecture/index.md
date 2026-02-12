@@ -13,7 +13,9 @@ Deep-dive documentation for the Federation's system design.
 | Document | Description |
 |----------|-------------|
 | [🏗️ System Overview](system-overview) | Architecture, communication framework, and technology stack |
-| [🖥️ Frontend Architecture](frontend-architecture) | **NEW** — Conductor Console + Orchestration Platform: transport-agnostic design with Jitsi and MS Teams profiles |
+| [🏛️ SynOp Architecture](synop-architecture) | **NEW** — The Two-Tier Operator Model: Conductors, SynOps, and Ops |
+| [🖥️ Frontend Architecture](frontend-architecture) | Conductor Console + Orchestration Platform: transport-agnostic design with Jitsi and MS Teams profiles |
+| [🔌 OpenClaw Gateway](openclaw-gateway) | **NEW** — External Op runtime: self-hosted, air-gapped, MCP-native skill execution |
 
 ---
 

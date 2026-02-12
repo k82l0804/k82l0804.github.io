@@ -23,8 +23,11 @@ Research, analysis, and the thinking behind the Federation project.
 
 | Document | Description |
 |----------|-------------|
-| [🔮 Future Features](future-features) | **NEW** — SynOp + Op architecture, persona tools, distributed project memory, and the roadmap ahead |
-| [🖥️ Frontend Architecture](/architecture/frontend-architecture) | **NEW** — Conductor Console + Orchestration Platform: Jitsi → MS Teams transport architecture |
+| [🔮 Future Features](future-features) | SynOp + Op architecture, persona tools, distributed project memory, and the roadmap ahead |
+| [🏛️ SynOp Architecture](/architecture/synop-architecture/) | **NEW** — The Two-Tier Operator Model: Conductors, SynOps, and Ops |
+| [🖥️ Frontend Architecture](/architecture/frontend-architecture/) | Conductor Console + Orchestration Platform: Jitsi → MS Teams transport architecture |
+| [🧠 Distributed Project Memory](distributed-project-memory) | **NEW** — Memory that travels with the code, not the agent |
+| [🔌 OpenClaw Gateway](/architecture/openclaw-gateway/) | **NEW** — External Op runtime for air-gapped skill execution |
 
 ## Supplementary Reading
 

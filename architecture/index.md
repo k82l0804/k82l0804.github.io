@@ -13,6 +13,7 @@ Deep-dive documentation for the Federation's system design.
 | Document | Description |
 |----------|-------------|
 | [🏗️ System Overview](system-overview) | Architecture, communication framework, and technology stack |
+| [🖥️ Frontend Architecture](frontend-architecture) | **NEW** — Conductor Console + Orchestration Platform: transport-agnostic design with Jitsi and MS Teams profiles |
 
 ---
 

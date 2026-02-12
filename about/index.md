@@ -24,6 +24,7 @@ Research, analysis, and the thinking behind the Federation project.
 | Document | Description |
 |----------|-------------|
 | [🔮 Future Features](future-features) | **NEW** — SynOp + Op architecture, persona tools, distributed project memory, and the roadmap ahead |
+| [🖥️ Frontend Architecture](/architecture/frontend-architecture) | **NEW** — Conductor Console + Orchestration Platform: Jitsi → MS Teams transport architecture |
 
 ## Supplementary Reading
 

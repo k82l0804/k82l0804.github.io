@@ -136,6 +136,7 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 | Section | Description |
 |:---|:---|
 | [🏗️ System Architecture](/architecture/system-overview) | Data & process architecture, communication framework, and technology stack |
+| [🖥️ Frontend Architecture](/architecture/frontend-architecture) | Conductor Console + Orchestration Platform — transport-agnostic design with Jitsi and MS Teams profiles |
 | [📜 About The Federation](/about/) | Manifesto, whitepaper, and supplementary reading |
 | [🚀 Federation 2.0 White Paper](/about/whitepaper-v2/) | Dual-State Architecture, Synthetic Operators, and the vision for human-machine teaming |
 | [📽️ Draper Presentation](/about/draper-presentation) | Visual slides and technical talking points from the February 2026 laboratory briefing |

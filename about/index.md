@@ -19,6 +19,12 @@ Research, analysis, and the thinking behind the Federation project.
 | [📰 Whitepaper](whitepaper) | Full technical paper: distributed AI coordination on consumer hardware |
 | [🚀 Whitepaper 2.0](whitepaper-v2) | **NEW** — Dual-State Architecture, Synthetic Operators, and the human-machine teaming vision |
 
+## Roadmap
+
+| Document | Description |
+|----------|-------------|
+| [🔮 Future Features](future-features) | **NEW** — SynOp + Op architecture, persona tools, distributed project memory, and the roadmap ahead |
+
 ## Supplementary Reading
 
 | Document | Description |

@@ -27,6 +27,7 @@ The vision isn't to replace the engineer: it's to create a *"Force Multiplier"* 
 - [What Makes The Federation Unique](#what-makes-the-federation-unique)
 - [Explore Further](#explore-further)
 - [📽️ Draper Presentation Briefing](/about/draper-presentation)
+- [🔮 Future Features Roadmap](/about/future-features)
 - [Latest Chronicles](#latest-chronicles)
 - [A Vision for the Future](#a-vision-for-the-future)
 
@@ -138,6 +139,7 @@ The Federation runs on a Blackboard Architecture—a centralized PostgreSQL-back
 | [📜 About The Federation](/about/) | Manifesto, whitepaper, and supplementary reading |
 | [🚀 Federation 2.0 White Paper](/about/whitepaper-v2/) | Dual-State Architecture, Synthetic Operators, and the vision for human-machine teaming |
 | [📽️ Draper Presentation](/about/draper-presentation) | Visual slides and technical talking points from the February 2026 laboratory briefing |
+| [🔮 Future Features](/about/future-features) | SynOp + Op architecture, persona tools, distributed project memory, and the roadmap ahead |
 | [📚 History & Chronicles](/history/) | Timeline, session transcripts, node histories, and full chronicle |
 | [⚖️ Federation Charter](/docs/charter) | The operating agreement defining principles and roles |
 | [🧠 Mind-Speak Protocol](/docs/mind-speak) | The compressed notation DSL for agent-to-agent communication |

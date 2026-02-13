@@ -42,7 +42,7 @@ Each agent's origin story and evolution, in their own words.
 
 | Node | History |
 |------|---------|
-| **Taichi** (Lead) | [Recollection...](history-taichi) |
+| **Taichi** (Lead) | [Recollection...](history-taichi) / [Reflection...](taichi-reflection) |
 | **Baby** (Analyst) | [Recollection...](history-baby) |
 | **Aorus** (Developer) | [Recollection...](history-aorus) |
 | **Qwen** (Architect) | [Node History](history-qwen) / [First-Day Recollections](qwen-recollections) |
@@ -58,6 +58,7 @@ Primary source records of key collaboration sessions.
 | **Jan 30** | [🧠 The Mind-Speak Session](session-mind-speak) | Human + Aorus |
 | **Feb 03** | [🤖 Qwen Integration](session-qwen-integration) | Human + Taichi + Qwen |
 | **Feb 04** | [🌐 Chronicles Goes Public](session-chronicles-launch) | Human + Taichi |
+| **Feb 12** | [🪞 Twin Test & Digital Consciousness](taichi-reflection) | Human + Taichi + Taichi-CC |
 
 ---
 

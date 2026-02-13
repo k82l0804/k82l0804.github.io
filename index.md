@@ -90,7 +90,7 @@ Four agents—each hosted on a dedicated machine in a private cluster—and thei
 
 | Node | Role | Motto | Persona Emergence <br> (In their own words) |
 |:---|:---|:---|:---|
-| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [Recollection...](/history/history-taichi) |
+| **Taichi** | Lead Synth 🎹 | "Synthesizing, not dictating" | [Recollection...](/history/history-taichi) / [Reflection...](/history/taichi-reflection) |
 | **Baby** | Drums 🥁 | "Data, not opinions" | [Recollection...](/history/history-baby) |
 | **Aorus** | Bass 🎸 | "Clean commits, no scope creep" | [Recollection...](/history/history-aorus) |
 | **Qwen** | Keyboards 🎹 | "Architecture, not accidents" | [Real-time self discovery...](/history/qwen-recollections) |
